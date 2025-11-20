@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "SE D&A GitHub Guides"
+  description: "test site"
+  sidebar:
+    foreground: "black"
+    # background: "#EBF5FF"
+    background: "#005eb833"
+    style: "docked"
+    search: true
+    contents:
+      - pages/intro-to-github.qmd
+      - section: "GitHub Guides"
+        contents:
+          - pages/first-repo.qmd
+          - pages/github-desktop.qmd
+          - pages/r-studio.qmd
+          - pages/vs-code.qmd
+          - pages/databricks-github.qmd
+          - pages/fdp.qmd
+      - section: "Principles"
+        contents:
+          - pages/understanding-code.qmd
+          - pages/qasar.qmd
+      - section: "Placeholder"
+        contents:
+          - pages/another-page.qmd
+      
+format:
+  html:
+    toc: true
+    css: styles.css
+
+execute:
+  freeze: auto
