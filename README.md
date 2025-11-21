@@ -1,47 +1,13 @@
-# Report Name
+# South East D&A GitHub resources
 
-**Status:** Active / Retired
+https://nhsengland.github.io/se-da-github-guide/
 
-**Latest Version:** v0.0.0
+With thanks to contributions from analysts in NHS England and throughout the wider health system for resources that we have, no doubt, plagiarised with varying degrees of awareness!
 
-**Transitioned to UDAL:** Y/N
+**Status:** Active 
 
-**Mini team:** Which mini team produces the report
+**Purpose:** To support colleagues in the South East Data and Analytics Team to get started with GitHub and make best use of software 
 
-**Subject area:** Specific subject area
+**Audience:** South East D&A colleagues, wider analytical colleagues, anyone who may find these resources helpful 
 
-**Contact:** Who to contact with questions
-
-## Overview
-
-**Purpose:** Describe what this report does
-
-**Audience:** Describe who the report is for
-
-**Frequency:** How often is it refreshed
-
-**Output type:** Slides, excel, markdown, dashboard, etc.
-
-## Data Sources
-
-Detail data sources included in this report.
-
-## Quality Assurance, Standards and Reporting (QASAR)
-
-### Latest QA
-
-**QA Level:** Silver/Gold
-
-**QA Completed By:** Who conducted the QA
-
-**QA Completion Date:** When was the QA conducted
-
-### Sign Off
-
-**Sign Off By:** Which SLT member signed off this work
-
-**Sign Off Date:** When was this work signed off
-
-## SOP
-
-The SOP can be found in the guidance folder of this repository.
+**Contact:** Tom Hook, Analyst, South East D&A (tom.hook2@nhs.net) or South East D&A Team (england.datasouth@nhs.net)
