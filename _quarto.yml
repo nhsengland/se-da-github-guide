@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!guidance/SOP.md"
 
 website:
   title: "SE D&A GitHub Guides"
@@ -28,7 +31,7 @@ website:
       - section: "Placeholder"
         contents:
           - pages/another-page.qmd
-      
+
 format:
   html:
     toc: true
