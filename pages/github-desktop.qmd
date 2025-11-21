@@ -10,13 +10,13 @@ For those that want do more version control and collaboration, GitHub desktop is
 
 First step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for **GitHub**. You want to download the app with the purple cat.
 
-![](../../pics/company-portal.PNG)
+![](..pics/company-portal.PNG)
 
 You will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can't remember).
 
 If you ever need to change your associated github account, you can navigate File \> Options, and switch account in there.
 
-![](../../pics/change-account.PNG)
+![](..pics/change-account.PNG)
 
 ## Local repo management
 
@@ -24,7 +24,7 @@ If you ever need to change your associated github account, you can navigate File
 
 Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see [here](first-repo.qmd#sec-createrepo) for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.
 
-![](../../pics/desktop-new-repo.PNG)
+![](..pics/desktop-new-repo.PNG)
 
 ### .gitignore
 
@@ -64,7 +64,7 @@ Any changes you save in any files in this folder (that aren't ignored) will appe
 A green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.
 :::
 
-![](../../pics/changes-example.PNG)
+![](..pics/changes-example.PNG)
 
 You can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately
 
@@ -72,13 +72,13 @@ You can make changes to multiple files in a single commit or commit them separat
 
 If you need to review or revisit any prior commits, you can see these in the **History** tab.
 
-![](../../pics/history.PNG)
+![](..pics/history.PNG)
 
 ## Push to GitHub
 
 All that's left to do is share your repo to github. This is as easy as clicking the **Publish repository** button.
 
-![](../../pics/publish-repo.PNG)
+![](..pics/publish-repo.PNG)
 
 ::: callout-important
 Remember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won't be able to make changes or move to the South East area!
@@ -97,11 +97,11 @@ As well as creating your own repos, it may be that you want to open someone else
 
 This is really easy. Navigate to the repo you want to work on. Click the green **\<\> Code** button, and then **Open with GitHub Desktop**. Easy.
 
-![](../../pics/open-repo-browser.PNG)
+![](..pics/open-repo-browser.PNG)
 
 ### From GitHub Desktop
 
 This is almost as easy. Within GitHub desktop, navigate to File \> Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.
 
-![](../../pics/clone-repo-desktop.PNG)
+![](..pics/clone-repo-desktop.PNG)
 

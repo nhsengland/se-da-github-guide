@@ -284,7 +284,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>1. Create a new GitHub repository:</strong> Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g.&nbsp;<code>rstudio-git-test</code>, check the option to initialize this repository with a README and create the repository.</p>
 <p><strong>2. Copy the repository HTTPS url:</strong> To create a new Git based project in RStudio, we need the repository url. You find the repository HTTPS url on the just created GitHub project page. There press the button <em>&lt;&gt; Code</em> (green button) and copy the HTTPS link of the project by clicking the little icon to the right of the URL. The link will be something like <code>https://github.com/yourusername/rstudio-git-test.git</code>.</p>
 <p><strong>3. Create a new RStudio project with Git version control:</strong> Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select <em>File &gt; New Project..</em>, select <em>Version Control</em>, Choose <em>Git</em>, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (<em>clone</em> in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created <code>README.md</code>.</p>
-<p><img src="../../pics/RStudio-clone-git-project.gif" class="img-fluid"></p>
+<p><img src="..pics/RStudio-clone-git-project.gif" class="img-fluid"></p>
 </section>
 <section id="part-2-make-local-changes-commit-and-push-to-github" class="level2">
 <h2 class="anchored" data-anchor-id="part-2-make-local-changes-commit-and-push-to-github">Part 2: Make local changes, commit and push to GitHub</h2>
@@ -296,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>My first commit to GitHub with R </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>2. Commit the changes:</strong> Now we commit the local changes to the local Git repository.<br>
 In RStudio press the <em>Git</em> icon and select <em>Commit</em> from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the <em>Staged</em> column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.<code>Readme update</code> and press the <em>Commit</em> button.</p>
-<p><img src="../../pics/RStudio-commit.png" class="img-fluid"></p>
+<p><img src="..pics/RStudio-commit.png" class="img-fluid"></p>
 <p><strong>3. Push to the remote repository:</strong> To push the changes to the remote GitHub repository press the <em>Push</em> button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.</p>
 
 

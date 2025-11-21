@@ -34,13 +34,13 @@ The way that Git works, you work on files saved in a local folder, then push to 
 
 To intisialise a repo, click the Source Control button on the left panel:
 
-![](../../pics/sourcecontrol.png)
+![](..pics/sourcecontrol.png)
 
 Click 'Open Folder' and navigate to the repo folder (in your 'OneDrive\Github' folder). Note: you may be asked whether you trust the authors of the files in the folder. Usually this is yes, as it's from your own OneDrive.
 
 Now we've selected the folder, we can now initialise the repository:
 
-![](../../pics/initrepo.png)
+![](..pics/initrepo.png)
 
 This won't yet appear on the GitHub web browser (as we haven't published yet) - we will get to that.
 
@@ -48,13 +48,13 @@ This won't yet appear on the GitHub web browser (as we haven't published yet) - 
 
 If, instead of creating your own repo from scratch, you want to take something someone else has done for yourself, you can clone the repo. To do this, click 'Clone Repository' instead:
 
-![](../../pics/sourcecontrol.png)
+![](..pics/sourcecontrol.png)
 
 (Note: if you're already working on a repo, you can clear what you're working on by opening a new window (File -\> New window) or by closing the current folder (File -\> Close folder)).
 
 In the top bar, click 'Clone from GitHub' and start typing for the repo you want.
 
-![](../../pics/clonerepo.png)
+![](..pics/clonerepo.png)
 
 Save to your 'OneDrive\Github' folder. You can now work on the files.
 
@@ -66,15 +66,15 @@ This is where branches come in.
 
 Once you've cloned a repo, ensure you are in your Source Control view and click the '...' as shown below.
 
-![](../../pics/branch.png)
+![](..pics/branch.png)
 
 And enter the desired branch name (e.g. 'dev')
 
-![](../../pics/branchname.png)
+![](..pics/branchname.png)
 
 Switching branches: you can switch branches within VSCode in the bottom left of the screen:
 
-![](../../pics/switchbranch.png)
+![](..pics/switchbranch.png)
 
 In your branch, you can work on you script, add and delete files etc. If you want, it can be merged to the 'main' branch, which we will again get to...
 
@@ -138,7 +138,7 @@ In this tutorial we **create a project based on a remote GitHub repository** (op
 
 **3. Create a new RStudio project with Git version control:** Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select *File \> New Project..*, select *Version Control*, Choose *Git*, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (*clone* in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created `README.md`.
 
-![](../../pics/RStudio-clone-git-project.gif)
+![](..pics/RStudio-clone-git-project.gif)
 
 ## Part 2: Make local changes, commit and push to GitHub
 
@@ -155,6 +155,6 @@ My first commit to GitHub with R
 **2. Commit the changes:** Now we commit the local changes to the local Git repository.\
 In RStudio press the *Git* icon and select *Commit* from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the *Staged* column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.`Readme update` and press the *Commit* button.
 
-![](../../pics/RStudio-commit.png)
+![](..pics/RStudio-commit.png)
 
 **3. Push to the remote repository:** To push the changes to the remote GitHub repository press the *Push* button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.
