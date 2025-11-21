@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SE D&amp;A GitHub Guides - Branches and Issues for QA</title>
+<title>SE D&amp;A GitHub Guides - QA on GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/understanding-code.html">Principles</a></li><li class="breadcrumb-item"><a href="../pages/qasar.html">Branches and Issues for QA</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/understanding-code.html">Principles</a></li><li class="breadcrumb-item"><a href="../pages/qasar.html">QA on GitHub</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/qasar.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Branches and Issues for QA</span></a>
+ <span class="menu-text">QA on GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -208,11 +208,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#remember-the-principles-of-branching" id="toc-remember-the-principles-of-branching" class="nav-link active" data-scroll-target="#remember-the-principles-of-branching">Remember the principles of branching</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#remember-the-principles-of-branching" id="toc-remember-the-principles-of-branching" class="nav-link" data-scroll-target="#remember-the-principles-of-branching">Remember the principles of branching</a></li>
   <li><a href="#planned-qa-process" id="toc-planned-qa-process" class="nav-link" data-scroll-target="#planned-qa-process">1. Planned QA Process</a>
   <ul class="collapse">
   <li><a href="#check" id="toc-check" class="nav-link" data-scroll-target="#check">Check</a></li>
-  <li><a href="#request-qa---the-author" id="toc-request-qa---the-author" class="nav-link" data-scroll-target="#request-qa---the-author">Request QA - the author</a></li>
+  <li><a href="#creating-a-pull-request-how-the-author-requests-qa" id="toc-creating-a-pull-request-how-the-author-requests-qa" class="nav-link" data-scroll-target="#creating-a-pull-request-how-the-author-requests-qa">Creating a Pull Request (how the author requests QA)</a></li>
   <li><a href="#complete-qa---the-reviewer" id="toc-complete-qa---the-reviewer" class="nav-link" data-scroll-target="#complete-qa---the-reviewer">Complete QA - the reviewer</a></li>
   <li><a href="#merge-and-tidy---the-author" id="toc-merge-and-tidy---the-author" class="nav-link" data-scroll-target="#merge-and-tidy---the-author">Merge and tidy - the author</a></li>
   </ul></li>
@@ -227,9 +228,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/understanding-code.html">Principles</a></li><li class="breadcrumb-item"><a href="../pages/qasar.html">Branches and Issues for QA</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/understanding-code.html">Principles</a></li><li class="breadcrumb-item"><a href="../pages/qasar.html">QA on GitHub</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Branches and Issues for QA</h1>
+<h1 class="title">QA on GitHub</h1>
 </div>
 
 
@@ -246,6 +247,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Just need a quick reminder? This flowchart shows a summary of the process. Scroll down to see more detail about the steps.</p>
+<p><img src="pics/qasar-flowchart.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -256,9 +261,10 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This process can be managed in GitHub desktop, VS Code, or wherever you are most comfortable.</p>
+<p>This process can be managed in GitHub desktop, VS Code, RStudio, or the IDE you are most comfortable with.</p>
 </div>
 </div>
+</section>
 <section id="remember-the-principles-of-branching" class="level2">
 <h2 class="anchored" data-anchor-id="remember-the-principles-of-branching">Remember the principles of branching</h2>
 <p>First let’s remind ourselves of the principles of branching (see <a href="../pages/intro-to-github.html#sec-branching">here</a> for an intro to branching):</p>
@@ -292,52 +298,99 @@ Note
 <li><p>Check that your code is intentionally commented.</p></li>
 <li><p>The changes you have made are complete, self-reviewed, and saved.</p></li>
 <li><p>You may want to include the author and latest modification date at the top (although GitHub will help manage this for you).</p></li>
-<li><p>Ensure that your repo is up to date on GitHub so that the person QA-ing has the most recent version.</p></li>
+<li><p>Ensure that you have committed and pushed the latest changes so that the person QA-ing has the most recent version.</p></li>
 <li><p>Make sure that the reviewer is a collaborator in the repo settings.</p></li>
+<li><p>Ensure any files (e.g.&nbsp;config) required for the code are uploaded onto SharePoint for the reviewer to use.</p></li>
 </ul>
-<p>If you are the <strong>QA’er</strong>:</p>
+<p>If you are the <strong>reviewer</strong>:</p>
 <ul>
-<li>Make sure that you have the time and knowledge to do the review.</li>
+<li>Make sure that you have the time, access, and knowledge to do the review.</li>
 </ul>
 </section>
-<section id="request-qa---the-author" class="level3">
-<h3 class="anchored" data-anchor-id="request-qa---the-author">Request QA - the author</h3>
+<section id="creating-a-pull-request-how-the-author-requests-qa" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-pull-request-how-the-author-requests-qa">Creating a Pull Request (how the author requests QA)</h3>
 <p>Given that all your changes are in a new feature branch, the QA process boils down to pull requests.</p>
 <ul>
-<li><p>Create a pull request with your changes</p></li>
-<li><p>Add a description of what needs to be QA’d, why changes have been made, and any specific QA requests</p></li>
-<li><p>Assign a reviewer and click <em>create pull request</em></p></li>
+<li><p>On your repository, navigate to the branches list</p></li>
+<li><p>Click on the 3 dots for the branch you want to be QA’d and click <em>New pull request</em></p></li>
 </ul>
-</section>
-<section id="complete-qa---the-reviewer" class="level3">
-<h3 class="anchored" data-anchor-id="complete-qa---the-reviewer">Complete QA - the reviewer</h3>
-<p>Once you’ve been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes.</p>
-<p><img src="pics/qasar-pr-notification.png" class="img-fluid"></p>
-<p>Additions will be in green and removals in red. Review all changes and files, adding comments and requesting changes where necessary.</p>
-<p><img src="pics/qasar-pr-request.png" class="img-fluid"></p>
-<p>Comments can be added in-line with code</p>
-<p><img src="pics/qasar-pr-comment.png" class="img-fluid"></p>
-<p>Once you are happy with the changes and all issues are resolved, you can approve the pull request.</p>
-<p><img src="pics/qasar-pr-approved.png" class="img-fluid"></p>
-</section>
-<section id="merge-and-tidy---the-author" class="level3">
-<h3 class="anchored" data-anchor-id="merge-and-tidy---the-author">Merge and tidy - the author</h3>
-<p>At this stage, the author can merge the branch. You might want to include in the description (and hence the commit history), the QASAR level requested.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<p><img src="pics/qasar-branches.png" class="img-fluid"></p>
+<ul>
+<li><p>Add a description of what needs to be QA’d, why changes have been made, location of any required files (links to public data, or files on SharePoint <strong>path from Analysis/ onwards only!</strong>) in order to run the code, and any specific QA requests</p></li>
+<li><p>Add a reviewer (the person you want to QA) and</p></li>
+<li><p>Add an assignee (usually you, the person responsible for merging the branch once QA has passed)</p></li>
+<li><p>Click <em>create pull request</em></p></li>
+</ul>
+<p>Here’s an example of a filled in pull request.</p>
+<p><img src="pics/qasar-pr-completed.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>All other information about who QA’d and when will be logged automatically in the pull request.</p>
+<p>This is the notation to create a checklist:<br>
+- [] Item 1<br>
+- [] Item 2</p>
 </div>
 </div>
-<p>Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!</p>
+</section>
+<section id="complete-qa---the-reviewer" class="level3">
+<h3 class="anchored" data-anchor-id="complete-qa---the-reviewer">Complete QA - the reviewer</h3>
+<p>Once you’ve been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes.</p>
+<p><img src="pics/qasar-pr-notification.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Additions will be in green and removals in red</p>
+</div>
+</div>
+<p>Review the QA checklist and files changed list. Add comments and request changes where necessary. The best way to do this is often to <strong>clone the repository</strong> to your local area, and run the code yourself.</p>
+<p><img src="pics/qasar-pr-request.png" class="img-fluid"></p>
+<p>Once on the Pull Request page, navigate to the Files changed tab to see the code.</p>
+<p>Comments can be added in-line with code. If you do this, click <em>Start a Review</em> if you want all the comments to be sent over at once, at the end of your review.</p>
+<p><img src="pics/qasar-pr-comment.png" class="img-fluid"></p>
+<p>After reviewing the code, as reviewer, you decide what the verdict is. Click “Review Changes” and leave an overall comment, with one of the following options:<br>
+- <strong>Comment</strong> - Submit general feedback without explicit approval<br>
+- <strong>Approve</strong> - Submit feedback and approve merging these changes<br>
+- <strong>Request changes</strong> - Submit feedback that must be addressed before merging</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset panel-tabset-fade">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Comment</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Approve</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Request changes</a></li></ul>
+<div class="tab-content panel-tabset-fade">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>If as the reviewer, you think there could be some improvements, or you’re not sure about xyz, this is a good way to convey that.</p>
+<p><img src="pics/qasar-pr-submit-review-comment.png" class="img-fluid"></p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>If as the reviewer, you’re happy with the piece of work, and want the author to merge this into main branch with no edits, this is what you want.</p>
+<p><img src="pics/qasar-pr-submit-review-approve.png" class="img-fluid"> <img src="pics/qasar-pr-approved.png" class="img-fluid"></p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>If as the reviewer, you’ve spotted something which needs to be changed before being merged into main, you can request changes to deny the pull request until those are actioned.</p>
+<p><img src="pics/qasar-pr-submit-review-req-changes.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="merge-and-tidy---the-author" class="level3">
+<h3 class="anchored" data-anchor-id="merge-and-tidy---the-author">Merge and tidy - the author</h3>
+<p>At this stage, the work now sits back with the author.</p>
+<p>If the author decides to make changes on the back of the review, these changes should be made on the same branch. The author should decide if another review is required (correcting a spelling error doesn’t require one, but changing methodology may). If so, the author can use <strong>re-request review</strong> on the same pull request, notifying the reviewer.</p>
+<p>After any changes are made, the branch is ready to merge. Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!</p>
 <p><img src="pics/qasar-pr-merged.png" class="img-fluid"></p>
+<p>The author should then update the README (directly onto the main branch is fine) with QASAR information including level of QA, who conducted QA, and sign off. This information is included in the se-template and makes QASAR information easy to find. Further detail is available in the repo history.</p>
+<p><img src="pics/qasar-readme.png" class="img-fluid"></p>
 </section>
 </section>
 <section id="what-to-do-if-you-spot-an-issue-or-have-an-idea" class="level2">
