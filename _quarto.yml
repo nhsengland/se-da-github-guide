@@ -15,7 +15,6 @@ website:
     style: "docked"
     search: true
     contents:
-      - pages/index.qmd
       - pages/intro-to-github.qmd
       - section: "GitHub Guides"
         contents:
