@@ -4,7 +4,7 @@ project:
 
 website:
   title: "SE D&A GitHub Guides"
-  description: "test site"
+  site-url: "https://nhsengland.github.io/se-da-github-guide/"
   sidebar:
     foreground: "black"
     # background: "#EBF5FF"
