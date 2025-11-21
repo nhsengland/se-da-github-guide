@@ -305,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="process-map" class="level1">
 <h1>Process map</h1>
-<p>If possible…</p>
+<p>If possible.</p>
 </section>
 <section id="setting-up-git-in-vscode" class="level1">
 <h1>Setting up Git in VSCode</h1>
@@ -320,32 +320,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The best thing to do is to create the repo before (or as soon to the beginning as possible) starting writing your actual code. Think of it as this: you wouldn’t work on a big excel file without saving first, in case you lost it. The same applies here.</p>
 <p>The way that Git works, you work on files saved in a local folder, then push to GitHub when you’re done (so you’re never working directly in GitHub). So, to start, you need to create a local blank folder for you to start with (or where you existing folder is). Recommendation is to create a ‘GitHub’ folder in your OneDrive, where the repo folders can sit.</p>
 <p>To intisialise a repo, click the Source Control button on the left panel:</p>
-<p><img src="..pics/sourcecontrol.png" class="img-fluid"></p>
+<p><img src="pics/sourcecontrol.png" class="img-fluid"></p>
 <p>Click ‘Open Folder’ and navigate to the repo folder (in your ‘OneDrive’ folder). Note: you may be asked whether you trust the authors of the files in the folder. Usually this is yes, as it’s from your own OneDrive.</p>
 <p>Now we’ve selected the folder, we can now initialise the repository:</p>
-<p><img src="..pics/initrepo.png" class="img-fluid"></p>
+<p><img src="pics/initrepo.png" class="img-fluid"></p>
 <p>This won’t yet appear on the GitHub web browser (as we haven’t published yet) - we will get to that.</p>
 </section>
 <section id="cloning-a-repository" class="level1">
 <h1>Cloning a repository</h1>
 <p>If, instead of creating your own repo from scratch, you want to take something someone else has done for yourself, you can clone the repo. To do this, click ‘Clone Repository’ instead:</p>
-<p><img src="..pics/sourcecontrol.png" class="img-fluid"></p>
+<p><img src="pics/sourcecontrol.png" class="img-fluid"></p>
 <p>(Note: if you’re already working on a repo, you can clear what you’re working on by opening a new window (File -&gt; New window) or by closing the current folder (File -&gt; Close folder)).</p>
 <p>In the top bar, click ‘Clone from GitHub’ and start typing for the repo you want.</p>
-<p><img src="..pics/clonerepo.png" class="img-fluid"></p>
+<p><img src="pics/clonerepo.png" class="img-fluid"></p>
 <p>Save to your ‘OneDrive’ folder. You can now work on the files.</p>
 </section>
 <section id="branching" class="level1">
 <h1>Branching</h1>
 <p>Now, the whole point of GitHub is to work collaboratively, so there will be times where you want to clone someone’s repo and make your own additions. This is also best practice for your own repos: when adding a new development, create a new branch. <strong>Never work in ‘main’.</strong></p>
 <p>This is where branches come in.</p>
-<p>Once you’ve cloned a repo, ensure you are in your Source Control view and click the ‘…’ as shown below.</p>
-<p><img src="..pics/branch.png" class="img-fluid"></p>
+<p>Once you’ve cloned a repo, ensure you are in your Source Control view and click the ‘.’ as shown below.</p>
+<p><img src="pics/branch.png" class="img-fluid"></p>
 <p>And enter the desired branch name (e.g.&nbsp;‘dev’)</p>
-<p><img src="..pics/branchname.png" class="img-fluid"></p>
+<p><img src="pics/branchname.png" class="img-fluid"></p>
 <p>Switching branches: you can switch branches within VSCode in the bottom left of the screen:</p>
-<p><img src="..pics/switchbranch.png" class="img-fluid"></p>
-<p>In your branch, you can work on you script, add and delete files etc. If you want, it can be merged to the ‘main’ branch, which we will again get to…</p>
+<p><img src="pics/switchbranch.png" class="img-fluid"></p>
+<p>In your branch, you can work on you script, add and delete files etc. If you want, it can be merged to the ‘main’ branch, which we will again get to.</p>
 </section>
 <section id="tracking-and-staging" class="level1">
 <h1>Tracking and staging</h1>
@@ -400,14 +400,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="part-1-create-a-new-rstudio-project-with-git" class="level2">
 <h2 class="anchored" data-anchor-id="part-1-create-a-new-rstudio-project-with-git">Part 1: Create a new RStudio project with Git</h2>
 <p>There are three ways to create version control for a RStudio project.</p>
-<p>a) <strong>Create a new project and create a local Git repository:</strong> Select <em>File &gt; New Project..</em>, create a project from a <em>New Directory</em> and check the option <em>Create a git repository</em>. In order to push to a remote repository later on you add that remote repository by using the Git shell. If you already know which online repository you want to use for your projects, option c) is more convenient.</p>
+<p>a) <strong>Create a new project and create a local Git repository:</strong> Select <em>File &gt; New Project</em>, create a project from a <em>New Directory</em> and check the option <em>Create a git repository</em>. In order to push to a remote repository later on you add that remote repository by using the Git shell. If you already know which online repository you want to use for your projects, option c) is more convenient.</p>
 <p>b) <strong>Create a new project from a folder under version control:</strong> In this case you only need to create a new RStudio project for that directory and version control is automatically enabled. Go to <em>File &gt; New Project</em>, select create a new project from an <em>Existing Directory</em> and create the project.</p>
-<p>c) <strong>Create a new project based on a remote Git repository:</strong> Select <em>File &gt; New Project..</em> and from the opening menu select to create a new project from <em>Version Control</em>, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.</p>
+<p>c) <strong>Create a new project based on a remote Git repository:</strong> Select <em>File &gt; New Project</em> and from the opening menu select to create a new project from <em>Version Control</em>, Choose Git, then provide the repository url (use the https link of the url if you want to avoid all the ssh trouble) from the the repository you want to clone and create the project.</p>
 <p>In this tutorial we <strong>create a project based on a remote GitHub repository</strong> (option c). Hence we first create a new repository on GitHub and create our GitHub project from that repository.</p>
 <p><strong>1. Create a new GitHub repository:</strong> Login to your GitHub account and create a new GitHub repository. Give your new repository a short and memorable name e.g.&nbsp;<code>rstudio-git-test</code>, check the option to initialize this repository with a README and create the repository.</p>
 <p><strong>2. Copy the repository HTTPS url:</strong> To create a new Git based project in RStudio, we need the repository url. You find the repository HTTPS url on the just created GitHub project page. There press the button <em>&lt;&gt; Code</em> (green button) and copy the HTTPS link of the project by clicking the little icon to the right of the URL. The link will be something like <code>https://github.com/yourusername/rstudio-git-test.git</code>.</p>
-<p><strong>3. Create a new RStudio project with Git version control:</strong> Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select <em>File &gt; New Project..</em>, select <em>Version Control</em>, Choose <em>Git</em>, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (<em>clone</em> in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created <code>README.md</code>.</p>
-<p><img src="..pics/RStudio-clone-git-project.gif" class="img-fluid"></p>
+<p><strong>3. Create a new RStudio project with Git version control:</strong> Now everything is ready to create a new project with Git version control in RStudio. In RStudio Select <em>File &gt; New Project</em>, select <em>Version Control</em>, Choose <em>Git</em>, then provide the repository HTTPS link, select the R workspace folder and create the project. RStudio now copies (<em>clone</em> in Git terms) the content of the repository to your project folder. The content of the GitHub repository should now appear in the Files pane of RStudio and you should see there the created <code>README.md</code>.</p>
+<p><img src="pics/RStudio-clone-git-project.gif" class="img-fluid"></p>
 </section>
 <section id="part-2-make-local-changes-commit-and-push-to-github" class="level2">
 <h2 class="anchored" data-anchor-id="part-2-make-local-changes-commit-and-push-to-github">Part 2: Make local changes, commit and push to GitHub</h2>
@@ -419,7 +419,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>My first commit to GitHub with R </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>2. Commit the changes:</strong> Now we commit the local changes to the local Git repository.<br>
 In RStudio press the <em>Git</em> icon and select <em>Commit</em> from Git menu (Ctrl+Alt+M) to open the commit window to review the changes in the repository. In the <em>Staged</em> column we select by checking the checkbox the files we want to commit. The lower pane shows the edits in green and red of the file. Enter a commit message to indicate what has changed in this commit e.g.<code>Readme update</code> and press the <em>Commit</em> button.</p>
-<p><img src="..pics/RStudio-commit.png" class="img-fluid"></p>
+<p><img src="pics/RStudio-commit.png" class="img-fluid"></p>
 <p><strong>3. Push to the remote repository:</strong> To push the changes to the remote GitHub repository press the <em>Push</em> button on the upper right corner of the commit window. You will be prompted to enter the username and password of your GitHub account. Enter them and check on the GitHub page if the changes got pushed to your online repository on GitHub.</p>
 
 

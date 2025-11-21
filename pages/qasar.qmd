@@ -62,11 +62,11 @@ Once you've been added as a reviewer, you will receive an email with a link, and
 
 Additions will be in green and removals in red. Review all changes and files, adding comments and requesting changes where necessary. 
 
-![](..pics/qasar-pr-request.png)
+![](pics/qasar-pr-request.png)
 
 Comments can be added in-line with code
 
-![](../../pics/qasar-pr-comment.png)
+![](pics/qasar-pr-comment.png)
 
 Once you are happy with the changes and all issues are resolved, you can approve the pull request. 
 

@@ -20,11 +20,11 @@ Before we start, we need to check the following:
 
 This is super simple- go to GitHub (<https://github.com/>) and click **Sign Up**:
 
-![](..pics/sign-up.PNG)
+![](pics/sign-up.PNG)
 
 Then you need to enable two factor authentication. Once logged in, go to Settings \> Password and authentication, and, in the section called **Two-factor authentication**, click **Enable** and follow the instructions. You can use the same app that you authenticate other access with.
 
-![](..pics/2fa.PNG)
+![](pics/2fa.PNG)
 
 ## Get added to the NHS England Organisation and SE D&A area
 
@@ -44,18 +44,18 @@ This section covers very basic code sharing via the browser. It does not utilise
 
 When we first log in to GitHub, our homepage will look something like this. To create a repo, click the green **New** button in the left hand **Top Repositories** section.
 
-![](..pics/new-repo.PNG)
+![](pics/new-repo.PNG)
 
 We will also find this button in the **Repositories** sections on our profile and within any organisations that we are part of. They all lead to the same place. Which is here:
 
 ::: panel-tabset
 ### Unpopulated
 
-![](..pics/repo-info.PNG){width="5in"}
+![](pics/repo-info.PNG){width="5in"}
 
 ### Populated
 
-![](..pics/repo-info-populated.PNG){width="5in"}
+![](pics/repo-info-populated.PNG){width="5in"}
 :::
 
 As you can see, there are several things that need filling, and some that don't. We take them from the top:
@@ -84,19 +84,19 @@ If you have created your repo in the organisational area, you might want to move
 
 1.  Navigate to the repo and click the **Settings** button
 
-![](..pics/repo-settings.png)
+![](pics/repo-settings.png)
 
 2.  Within the **Access** section, click **Collaborators and teams** (top left), and click **Add teams**
 
-![](..pics/collab-and-teams.png)
+![](pics/collab-and-teams.png)
 
 3.  Finally search for and select South East D&A
 
-![](..pics/south-east-team.PNG)
+![](pics/south-east-team.PNG)
 
 4.  Choose what role you want your team members to have
 
-![](..pics/role-select.PNG)
+![](pics/role-select.PNG)
 
 Your repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you've allowed them to! 
 
@@ -110,11 +110,11 @@ Finally, all you need to do is actually upload some files!
 
 1.  Navigate to your repo and click **Add file** and then **Upload files**
 
-![](..pics/upload-files.PNG)
+![](pics/upload-files.PNG)
 
 2.  Drag and drop or browse to your files
 
-![](..pics/file-upload-wizard.PNG)
+![](pics/file-upload-wizard.PNG)
 
 3.  Name your commit, so you know what you added when, and click ✨**Commit changes**✨
 
