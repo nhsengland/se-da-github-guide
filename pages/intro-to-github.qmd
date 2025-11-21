@@ -40,7 +40,7 @@ title: "An Introduction to GitHub"
 
 A branch is a separate version of the main repository. Branching allows you to work on a different part of a project without impacting the main repository. When any development or work is complete, a branch can be merged with the main repository.
 
-![](pics/intro-branching.png)
+![](../../pics/intro-branching.png)
 
 ::: callout-note
 You can read more about the lego analogy here (<https://opensource.com/article/22/4/git-branches/>).
@@ -58,7 +58,7 @@ Given that one of the strengths of using Git and GitHub is that we can all work 
 
 -   Fetch is the safer option as it lets us see what any changes are before we adopt them.
 
-![](pics/fetch-graphic.png)
+![](../../pics/fetch-graphic.png)
 
 ### Staging, Committing, and Pushing
 
@@ -76,7 +76,7 @@ You may choose not to push your committed changes immediately e.g. if you are st
 
 A *pull request* is how you make a request to *merge* your branch to another branch e.g. move your changes to the main branch. If there are things that disagree between the branches that you are trying to merge, this is called a *conflict*. You have to resolve these before you can merge. If there are no conflicts, your pull request can be actioned immediately and the branches will be merged.
 
-![](pics/merge-diagram.png)
+![](../../pics/merge-diagram.png)
 
 ## The .gitignore
 

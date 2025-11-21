@@ -22,13 +22,13 @@ The way that Git works, you work on files saved in a local folder, then push to 
 
 To intisialise a repo, click the Source Control button on the left panel:
 
-![](pics/sourcecontrol.png)
+![](../../pics/sourcecontrol.png)
 
 Click 'Open Folder' and navigate to the repo folder (in your 'OneDrive\Github' folder). Note: you may be asked whether you trust the authors of the files in the folder. Usually this is yes, as it's from your own OneDrive.
 
 Now we've selected the folder, we can now initialise the repository:
 
-![](pics/initrepo.png)
+![](../../pics/initrepo.png)
 
 This won't yet appear on the GitHub web browser (as we haven't published yet) - we will get to that.
 
@@ -36,13 +36,13 @@ This won't yet appear on the GitHub web browser (as we haven't published yet) - 
 
 If, instead of creating your own repo from scratch, you want to take something someone else has done for yourself, you can clone the repo. To do this, click 'Clone Repository' instead:
 
-![](pics/sourcecontrol.png)
+![](../../pics/sourcecontrol.png)
 
 (Note: if you're already working on a repo, you can clear what you're working on by opening a new window (File -\> New window) or by closing the current folder (File -\> Close folder)).
 
 In the top bar, click 'Clone from GitHub' and start typing for the repo you want.
 
-![](pics/clonerepo.png)
+![](../../pics/clonerepo.png)
 
 Save to your 'OneDrive\Github' folder. You can now work on the files.
 
@@ -54,15 +54,15 @@ This is where branches come in.
 
 Once you've cloned a repo, ensure you are in your Source Control view and click the '...' as shown below.
 
-![](pics/branch.png)
+![](../../pics/branch.png)
 
 And enter the desired branch name (e.g. 'dev')
 
-![](pics/branchname.png)
+![](../../pics/branchname.png)
 
 Switching branches: you can switch branches within VSCode in the bottom left of the screen:
 
-![](pics/switchbranch.png)
+![](../../pics/switchbranch.png)
 
 In your branch, you can work on you script, add and delete files etc. If you want, it can be merged to the 'main' branch, which we will again get to...
 
