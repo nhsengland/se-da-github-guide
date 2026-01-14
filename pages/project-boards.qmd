@@ -1,0 +1,28 @@
+---
+title: "Project Boards"
+---
+
+# Project Boards
+
+A project board is a tool that helps you plan, track, and manage a piece of work. Visually similar to a Microsoft Teams Planner board, it's made up of columns and cards:
+
+-   Columns represent stages of work, e.g., To Do, In Progress, Done
+-   Cards represent tasks. These can be issues, pull requests, or notes.
+
+Project boards connect directly to your GitHub repository. That means:
+
+-   When someone opens an issue, you can add it to the board as a card.
+-   When a pull request is opened or merged, the card can move automatically.
+-   Everyone on the team sees the same board, so it’s easy to stay aligned
+
+## Part 1: Setting up a Project Board
+
+To set up a GitHub project board, navigate to "Projects" within your repo: 
+
+![](pics/project-board-nav-bar.png)
+Select 'New Project'. You can choose a template to follow (e.g., Kanban board or Roadmap) or you can start from scratch. Here is an example of an empty project board using the Kanban template: 
+
+![](pics/project-board-template.png)
+
+
+

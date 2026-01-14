@@ -28,6 +28,7 @@ website:
         contents:
           - pages/understanding-code.qmd
           - pages/qasar.qmd
+          - pages/project-boards.qmd
       - section: "Placeholder"
         contents:
           - pages/another-page.qmd
