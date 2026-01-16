@@ -1,8 +1,8 @@
 ---
-title: "Project Boards"
+title: "Using Project Boards"
 ---
 
-# Project Boards
+## What is a project board? 
 
 A project board is a tool that helps you plan, track, and manage a piece of work. Visually similar to a Microsoft Teams Planner board, it's made up of columns and cards:
 
@@ -13,16 +13,88 @@ Project boards connect directly to your GitHub repository. That means:
 
 -   When someone opens an issue, you can add it to the board as a card.
 -   When a pull request is opened or merged, the card can move automatically.
--   Everyone on the team sees the same board, so it’s easy to stay aligned
+-   **Everyone on the team sees the same board, so it’s easy to collaborate**
 
-## Part 1: Setting up a Project Board
+# Part 1: Setting up a Project Board
 
 To set up a GitHub project board, navigate to "Projects" within your repo: 
 
-![](pics/project-board-nav-bar.png)
+![](pics/project-board-nav-bar.png){width=600 height=200}
+
+
 Select 'New Project'. You can choose a template to follow (e.g., Kanban board or Roadmap) or you can start from scratch. Here is an example of an empty project board using the Kanban template: 
 
 ![](pics/project-board-template.png)
+
+
+You can rename your project board by clicking "Edit project name". Here you can also give the project a description and update the ReadMe. 
+
+::: callout-tip
+Set the repository as the "Default Repository". This will link all cards directly to the repository.
+:::
+
+![](pics/project-board-settings.png)
+
+# Part 2: Using your Project Board 
+
+The Kanban project board template has the following columns: 
+
+- Backlog: items that haven't yet started
+- Ready: items ready to be picked up 
+- In progress: items being actively worked on 
+- In review: items currently being reviewed 
+- Done: items that have been completed. 
+
+## Editing the template 
+You can edit column names and descriptions, hide or delete columns or reorder the columns by clicking the three dots in the top-right: 
+
+![](pics/project-board-column-edits.png){width=275 height=350}
+
+## Adding cards
+Use the "Add item" button at the bottom of each column to create a new card. For a new issue you can: 
+
+- Name the card and add a description
+- Assign someone (including yourself) to do the work
+- Add labels and issue types, including priority labels
+
+You can also add a card that links to an existing issue. 
+
+![](pics/project-board-card-details.png)
+
+::: callout-tip
+The more detail you can add to a card, the better! 
+:::
+
+# Part 3: Extra features 
+
+## Linking to a branch
+
+You can either: 
+
+- Create a new branch to complete the work
+- Link the card to an existing branch 
+
+![](pics/project-board-branch.png)
+
+This makes it quick & easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will automatically move the to "Done" column. 
+
+## Sub-issues 
+
+You can create a series of sub-issues related to a card: 
+
+![](pics/project-board-subissue.png)
+
+New cards are created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues, create individual branches and track progress separately. The relationships section also lets you see which issues and sub-issues are related: 
+
+![](pics/project-board-relationships.png){width=400 height=145}
+
+## Notifications 
+
+You will automatically receive notifications for any cards you are assigned too. You can unsubscribe or customise your notifications. 
+
+![](pics/project-board-notifications.png){width=400 height=150}
+
+
 
 
 
