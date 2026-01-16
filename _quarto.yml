@@ -29,6 +29,7 @@ website:
         contents:
           - pages/understanding-code.qmd
           - pages/qasar.qmd
+          - pages/issues.qmd
       - section: "Placeholder"
         contents:
           - pages/another-page.qmd

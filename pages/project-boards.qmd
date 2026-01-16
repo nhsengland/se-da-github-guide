@@ -2,7 +2,7 @@
 title: "Using Project Boards"
 ---
 
-## What is a project board? 
+## What is a project board? {#project-boards}
 
 A project board is a tool that helps you plan, track, and manage a piece of work. Visually similar to a Microsoft Teams Planner board, it's made up of columns and cards:
 
@@ -15,11 +15,11 @@ Project boards connect directly to your GitHub repository. That means:
 -   When a pull request is opened or merged, the card can move automatically.
 -   **Everyone on the team sees the same board, so it’s easy to collaborate**
 
-# Part 1: Setting up a Project Board
+# Setting up a Project Board
 
 To set up a GitHub project board, navigate to "Projects" within your repo: 
 
-![](pics/project-board-nav-bar.png){width=600 height=200}
+![](pics/project-board-nav-bar.png)
 
 
 Select 'New Project'. You can choose a template to follow (e.g., Kanban board or Roadmap) or you can start from scratch. Here is an example of an empty project board using the Kanban template: 
@@ -35,7 +35,7 @@ Set the repository as the "Default Repository". This will link all cards directl
 
 ![](pics/project-board-settings.png)
 
-# Part 2: Using your Project Board 
+# Using your Project Board 
 
 The Kanban project board template has the following columns: 
 
@@ -65,7 +65,7 @@ You can also add a card that links to an existing issue.
 The more detail you can add to a card, the better! 
 :::
 
-# Part 3: Extra features 
+# Extra features 
 
 ## Linking to a branch
 
@@ -86,7 +86,7 @@ You can create a series of sub-issues related to a card:
 
 New cards are created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues, create individual branches and track progress separately. The relationships section also lets you see which issues and sub-issues are related: 
 
-![](pics/project-board-relationships.png){width=400 height=145}
+![](pics/project-board-relationships.png){width=250 height=100}
 
 ## Notifications 
 
