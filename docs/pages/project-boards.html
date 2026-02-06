@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publishing Your First Repo – SE D&amp;A GitHub Guides</title>
+<title>Using Project Boards – SE D&amp;A GitHub Guides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-777ebfa88f8769e54b23fdee4cef2eb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="../pages/first-repo.html">Publishing Your First Repo</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="../pages/project-boards.html">Using Project Boards</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/first-repo.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pages/first-repo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publishing Your First Repo</span></a>
   </div>
 </li>
@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/project-boards.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/project-boards.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Using Project Boards</span></a>
   </div>
 </li>
@@ -222,28 +222,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#github-for-south-east-da" id="toc-github-for-south-east-da" class="nav-link active" data-scroll-target="#github-for-south-east-da">GitHub for South East D&amp;A</a></li>
-  <li><a href="#preliminary-steps" id="toc-preliminary-steps" class="nav-link" data-scroll-target="#preliminary-steps">Preliminary Steps</a>
+  <li><a href="#project-boards" id="toc-project-boards" class="nav-link active" data-scroll-target="#project-boards">What is a project board?</a></li>
+  <li><a href="#setting-up-a-project-board" id="toc-setting-up-a-project-board" class="nav-link" data-scroll-target="#setting-up-a-project-board">Setting up a Project Board</a></li>
+  <li><a href="#using-your-project-board" id="toc-using-your-project-board" class="nav-link" data-scroll-target="#using-your-project-board">Using your Project Board</a>
   <ul class="collapse">
-  <li><a href="#get-a-github-account" id="toc-get-a-github-account" class="nav-link" data-scroll-target="#get-a-github-account">Get a GitHub account</a></li>
-  <li><a href="#get-added-to-the-nhs-england-organisation-and-se-da-area" id="toc-get-added-to-the-nhs-england-organisation-and-se-da-area" class="nav-link" data-scroll-target="#get-added-to-the-nhs-england-organisation-and-se-da-area">Get added to the NHS England Organisation and SE D&amp;A area</a></li>
+  <li><a href="#editing-the-template" id="toc-editing-the-template" class="nav-link" data-scroll-target="#editing-the-template">Editing the template</a></li>
+  <li><a href="#adding-cards" id="toc-adding-cards" class="nav-link" data-scroll-target="#adding-cards">Adding cards</a></li>
   </ul></li>
-  <li><a href="#sharing-code-via-the-browser" id="toc-sharing-code-via-the-browser" class="nav-link" data-scroll-target="#sharing-code-via-the-browser">Sharing code via the browser</a>
+  <li><a href="#extra-features" id="toc-extra-features" class="nav-link" data-scroll-target="#extra-features">Extra features</a>
   <ul class="collapse">
-  <li><a href="#sec-createrepo" id="toc-sec-createrepo" class="nav-link" data-scroll-target="#sec-createrepo">Create the repo</a></li>
-  <li><a href="#move-the-repo-to-the-team-area" id="toc-move-the-repo-to-the-team-area" class="nav-link" data-scroll-target="#move-the-repo-to-the-team-area">Move the repo to the team area</a></li>
-  <li><a href="#add-files-to-the-repo" id="toc-add-files-to-the-repo" class="nav-link" data-scroll-target="#add-files-to-the-repo">Add files to the repo</a></li>
+  <li><a href="#linking-to-a-branch" id="toc-linking-to-a-branch" class="nav-link" data-scroll-target="#linking-to-a-branch">Linking to a branch</a></li>
+  <li><a href="#sub-issues" id="toc-sub-issues" class="nav-link" data-scroll-target="#sub-issues">Sub-issues</a></li>
+  <li><a href="#notifications" id="toc-notifications" class="nav-link" data-scroll-target="#notifications">Notifications</a></li>
   </ul></li>
-  <li><a href="#hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" id="toc-hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" class="nav-link" data-scroll-target="#hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular">Hints / tips / notes / things that don’t particularly belong anywhere in particular</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="../pages/first-repo.html">Publishing Your First Repo</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="../pages/project-boards.html">Using Project Boards</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Publishing Your First Repo</h1>
+<h1 class="title">Using Project Boards</h1>
 </div>
 
 
@@ -260,101 +260,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="github-for-south-east-da" class="level1">
-<h1>GitHub for South East D&amp;A</h1>
-<p>Our ambition in South East D&amp;A is to share as much code as possible on GitHub, to maximise sharing with others as well as to help ourselves out in future. There are lots of things that this document does not cover but this is a very basic guide to publishing your first repo and hopefully we can make it less scary!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://media.giphy.com/media/nhmHnkhlDCMEhViLOJ/giphy.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
+<section id="project-boards" class="level2">
+<h2 class="anchored" data-anchor-id="project-boards">What is a project board?</h2>
+<p>A project board is a tool that helps you plan, track, and manage a piece of work. Visually similar to a Microsoft Teams Planner board, it’s made up of columns and cards:</p>
+<ul>
+<li>Columns represent stages of work, e.g., To Do, In Progress, Done</li>
+<li>Cards represent tasks. These can be issues, pull requests, or notes.</li>
+</ul>
+<p>Project boards connect directly to your GitHub repository. That means:</p>
+<ul>
+<li>When someone opens an issue, you can add it to the board as a card.</li>
+<li>When a pull request is opened or merged, the card can move automatically.</li>
+<li><strong>Everyone on the team sees the same board, so it’s easy to collaborate</strong></li>
+</ul>
 </section>
-<section id="preliminary-steps" class="level1">
-<h1>Preliminary Steps</h1>
-<p>Before we start, we need to check the following:</p>
-<ol type="1">
-<li>You have a GitHub account (with 2FA)</li>
-<li>You have been added to the NHS England Organisation</li>
-<li>You have been added to the South East D&amp;A Team</li>
-</ol>
-<section id="get-a-github-account" class="level2">
-<h2 class="anchored" data-anchor-id="get-a-github-account">Get a GitHub account</h2>
-<p>This is super simple- go to GitHub (<a href="https://github.com/" class="uri">https://github.com/</a>) and click <strong>Sign Up</strong>:</p>
-<p><img src="pics/sign-up.PNG" class="img-fluid"></p>
-<p>Then you need to enable two factor authentication. Once logged in, go to Settings &gt; Password and authentication, and, in the section called <strong>Two-factor authentication</strong>, click <strong>Enable</strong> and follow the instructions. You can use the same app that you authenticate other access with.</p>
-<p><img src="pics/2fa.PNG" class="img-fluid"></p>
-</section>
-<section id="get-added-to-the-nhs-england-organisation-and-se-da-area" class="level2">
-<h2 class="anchored" data-anchor-id="get-added-to-the-nhs-england-organisation-and-se-da-area">Get added to the NHS England Organisation and SE D&amp;A area</h2>
-<p>Once you have a GitHub account and are set up with 2FA, you can email the organisational GitHub Management inbox at github@england.nhs.uk, requesting to be added to the NHS England Organisation and then one of our local admins can add you to the South East D&amp;A area.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Important note: the permissions set up means that creating a repo in your personal area and moving it to the organisation area will result in you losing all admin permissions (e.g.&nbsp;to add users / move to the team area). So make sure you are putting repos in the right place!!</p>
-</div>
-</div>
-<p><strong>That’s it, we’re ready to share some code!</strong></p>
-</section>
-</section>
-<section id="sharing-code-via-the-browser" class="level1">
-<h1>Sharing code via the browser</h1>
-<p>This section covers very basic code sharing via the browser. It does not utilise many of the features of Git or GitHub but is a good first step for creating a library of code we can return to.</p>
-<section id="sec-createrepo" class="level2">
-<h2 class="anchored" data-anchor-id="sec-createrepo">Create the repo</h2>
-<p>When we first log in to GitHub, our homepage will look something like this. To create a repo, click the green <strong>New</strong> button in the left hand <strong>Top Repositories</strong> section.</p>
-<p><img src="pics/new-repo.PNG" class="img-fluid"></p>
-<p>We will also find this button in the <strong>Repositories</strong> sections on our profile and within any organisations that we are part of. They all lead to the same place. Which is here:</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Unpopulated</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Populated</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><img src="pics/repo-info.PNG" class="img-fluid" style="width:5in"></p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><img src="pics/repo-info-populated.PNG" class="img-fluid" style="width:5in"></p>
-</div>
-</div>
-</div>
-<p>As you can see, there are several things that need filling, and some that don’t. We take them from the top:</p>
-<ol type="1">
-<li><p><em>Repository template</em>- There is a se-template team template you can choose to use. It will initialise a repo with a gitignore, SOP folder and template, and README template with some key reporting info for you to easily edit. If you don’t want to use this template, feel free to leave this as <strong>No template</strong>.</p></li>
-<li><p><em>Owner</em>- Depending on where you were when you clicked the <strong>New Repository</strong> button, this will default to either your own account or one of your organisations. It’s up to you where you store your repos but, generally, you would want to put work that you intend to share with colleagues within the organisation and keep only personal things in your own area.</p></li>
-<li><p><em>Repository name</em>- This should be a unique name that is short but reasonably descriptive. GitHub will handily tell you if the name is already in use somewhere else. Repo names shouldn’t include spaces but don’t worry if you forget, GitHub will replace spaces with hyphens.</p></li>
-<li><p><em>Description</em>- Although this field is optional, it’s a good idea to put something in here to help you (and others) quickly identify what the code is.</p></li>
-<li><p><em>Public / Private</em>- If you select <strong>Public</strong> then anyone anywhere can see your repo and the code within it. Selecting <strong>Private</strong> means that only those within the organisation (if the owner is an organisation) can see the code. Generally, this should be the default option- you can always change the privacy later.</p></li>
-<li><p><em>Add a README file</em>- Again, this is optional but generally a good idea. It will automatically create a markdown file with the repo name as the title and the description as the contents. You can then add details about the project including inputs, outputs, purpose, methodology etc. which will help you and others trying to use your code later.</p></li>
-<li><p><em>Add .gitignore</em>- A gitignore file tells GitHub which files to not look at and not publish. This could be things like data or personal user keys that you don’t want to share. We will use these more when we look at using GitHub Desktop but it is less important if you just plan to upload files manually.</p></li>
-<li><p><em>Choose a license</em>- This just tells people what they can do with their code. You can leave this as <strong>None</strong> if you want or, if you’re happy for people to use and replicate your code as they please, you might choose the <strong>MIT License</strong>.</p></li>
-</ol>
-<p>Now you can click <strong>Create repository</strong>.</p>
-</section>
-<section id="move-the-repo-to-the-team-area" class="level2">
-<h2 class="anchored" data-anchor-id="move-the-repo-to-the-team-area">Move the repo to the team area</h2>
-<p>If you have created your repo in the organisational area, you might want to move it to live in the South East area. This is very simple.</p>
-<ol type="1">
-<li>Navigate to the repo and click the <strong>Settings</strong> button</li>
-</ol>
-<p><img src="pics/repo-settings.png" class="img-fluid"></p>
-<ol start="2" type="1">
-<li>Within the <strong>Access</strong> section, click <strong>Collaborators and teams</strong> (top left), and click <strong>Add teams</strong></li>
-</ol>
-<p><img src="pics/collab-and-teams.png" class="img-fluid"></p>
-<ol start="3" type="1">
-<li>Finally search for and select South East D&amp;A</li>
-</ol>
-<p><img src="pics/south-east-team.PNG" class="img-fluid"></p>
-<ol start="4" type="1">
-<li>Choose what role you want your team members to have</li>
-</ol>
-<p><img src="pics/role-select.PNG" class="img-fluid"></p>
-<p>Your repo now lives in the South East D&amp;A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you’ve allowed them to!</p>
+<section id="setting-up-a-project-board" class="level1">
+<h1>Setting up a Project Board</h1>
+<p>To set up a GitHub project board, navigate to “Projects” within your repo:</p>
+<p><img src="pics/project-board-nav-bar.png" class="img-fluid"></p>
+<p>Select ‘New Project’. You can choose a template to follow (e.g., <a href="https://en.wikipedia.org/wiki/Kanban_board" target="_blank">Kanban board</a> or Roadmap) or you can start from scratch. Here is an example of an empty project board using the Kanban template:</p>
+<p><img src="pics/project-board-template.png" class="img-fluid"></p>
+<p>You can rename your project board by clicking “Edit project name”. Here you can also give the project a description and update the ReadMe.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -365,53 +291,77 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Please also add the nhsengland <strong>everyone</strong> team to the repo and give them read access so that everyone in the organisation can see your code.</p>
+<p>Set the repository as the “Default Repository”. This will link all cards directly to the repository.</p>
 </div>
 </div>
+<p><img src="pics/project-board-settings.png" class="img-fluid"></p>
 </section>
-<section id="add-files-to-the-repo" class="level2">
-<h2 class="anchored" data-anchor-id="add-files-to-the-repo">Add files to the repo</h2>
-<p>Finally, all you need to do is actually upload some files!</p>
-<ol type="1">
-<li>Navigate to your repo and click <strong>Add file</strong> and then <strong>Upload files</strong></li>
-</ol>
-<p><img src="pics/upload-files.PNG" class="img-fluid"></p>
-<ol start="2" type="1">
-<li>Drag and drop or browse to your files</li>
-</ol>
-<p><img src="pics/file-upload-wizard.PNG" class="img-fluid"></p>
-<ol start="3" type="1">
-<li>Name your commit, so you know what you added when, and click ✨<strong>Commit changes</strong>✨</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://media.giphy.com/media/G96zgIcQn1L2xpmdxi/giphy.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
+<section id="using-your-project-board" class="level1">
+<h1>Using your Project Board</h1>
+<p>The Kanban project board template has the following columns:</p>
+<ul>
+<li>Backlog: items that haven’t yet started</li>
+<li>Ready: items ready to be picked up</li>
+<li>In progress: items being actively worked on</li>
+<li>In review: items currently being reviewed</li>
+<li>Done: items that have been completed.</li>
+</ul>
+<section id="editing-the-template" class="level2">
+<h2 class="anchored" data-anchor-id="editing-the-template">Editing the template</h2>
+<p>You can edit column names and descriptions, hide or delete columns or reorder the columns by clicking the three dots in the top-right:</p>
+<p><img src="pics/project-board-column-edits.png" width="275" height="350"></p>
 </section>
-</section>
-<section id="hints-tips-notes-things-that-dont-particularly-belong-anywhere-in-particular" class="level1">
-<h1>Hints / tips / notes / things that don’t particularly belong anywhere in particular</h1>
-<div class="callout callout-style-default callout-important callout-titled">
+<section id="adding-cards" class="level2">
+<h2 class="anchored" data-anchor-id="adding-cards">Adding cards</h2>
+<p>Use the “Add item” button at the bottom of each column to create a new card. For a new issue you can:</p>
+<ul>
+<li>Name the card and add a description</li>
+<li>Assign someone (including yourself) to do the work</li>
+<li>Add labels and issue types, including priority labels</li>
+</ul>
+<p>You can also add a card that links to an existing issue.</p>
+<p><img src="pics/project-board-card-details.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>We do not have the power to delete repos from the NHS England organisation. If you need to have something deleted, you will need to contact the central inbox at github@england.nhs.uk.</p>
+<p>The more detail you can add to a card, the better!</p>
 </div>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://media.giphy.com/media/i4EmQUxdam6u0Q98bs/giphy.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
+</section>
+</section>
+<section id="extra-features" class="level1">
+<h1>Extra features</h1>
+<section id="linking-to-a-branch" class="level2">
+<h2 class="anchored" data-anchor-id="linking-to-a-branch">Linking to a branch</h2>
+<p>You can either:</p>
+<ul>
+<li>Create a new branch to complete the work</li>
+<li>Link the card to an existing branch</li>
+</ul>
+<p><img src="pics/project-board-branch.png" class="img-fluid"></p>
+<p>This makes it quick &amp; easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will automatically move the to “Done” column.</p>
+</section>
+<section id="sub-issues" class="level2">
+<h2 class="anchored" data-anchor-id="sub-issues">Sub-issues</h2>
+<p>You can create a series of sub-issues related to a card:</p>
+<p><img src="pics/project-board-subissue.png" class="img-fluid"></p>
+<p>New cards are created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues, create individual branches and track progress separately. The relationships section also lets you see which issues and sub-issues are related:</p>
+<p><img src="pics/project-board-relationships.png" width="250" height="100"></p>
+</section>
+<section id="notifications" class="level2">
+<h2 class="anchored" data-anchor-id="notifications">Notifications</h2>
+<p>You will automatically receive notifications for any cards you are assigned too. You can unsubscribe or customise your notifications.</p>
+<p><img src="pics/project-board-notifications.png" width="400" height="150"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

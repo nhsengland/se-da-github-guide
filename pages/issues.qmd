@@ -1,0 +1,56 @@
+---
+title: "Raising Issues"
+---
+
+## What is an issue? 
+
+If you spot a bug, have a suggestion for development or want to ask a question, you can do this by creating an **issue**. 
+
+An issue: 
+
+- Captures a problem or idea: Anything from “the Rmd crashes when I click X” to “we should make this chart blue”.
+- Creates a place for discussion: Team members can comment, ask questions, or suggest solutions.
+- Keeps work organised: Issues can be labelled, assigned, linked to pull requests, or grouped into milestones.
+- Documents decisions and progress: The whole conversation stays visible, so anyone can see what happened and why.
+
+![](pics/issues-main.png)
+
+## Creating an issue
+
+Navigate to the 'Issues' tab in the repository to see existing issues or create a new issue. To create a new issue, click the green 'New issue' button in the top right. 
+
+For a new issue you can: 
+
+- Name the card and add a description
+- Assign someone (including yourself) to do the work
+- Add labels and issue types, including priority labels
+
+![](pics/project-board-card-details.png)
+
+An issue can have both a 'Type' description and a 'Label':
+
+- The 'Type' defines the primary nature of the issue and can be either 'Bug', 'Feature' or 'Task'. 
+- A 'Label' adds extra information about the issue, such as the level of priority and area of interest. 
+
+An issue can only have one 'Type' but it can have multiple 'Labels'. Both the 'Type' and the 'Labels' can be used for filtering on the 'Issues' page and on a [project board](project-boards.html). 
+
+::: callout-tip
+The more detail you can add to a card, the better! 
+:::
+
+## Sub-issues 
+
+You can create a series of sub-issues related to an issue: 
+
+![](pics/project-board-subissue.png)
+
+New cards are created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues, create individual branches and track progress separately. The relationships section also lets you see which issues and sub-issues are related: 
+
+![](pics/project-board-relationships.png){width=250 height=100}
+
+
+## Project Boards 
+
+Project boards are a great way to plan, track, and manage a piece of work. They are used alongside issues to manage workflow and collaborate with your team. Read all about project boards and issues [here](project-boards.html). 
+
+
