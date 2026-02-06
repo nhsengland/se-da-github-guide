@@ -17,7 +17,7 @@ An issue:
 
 ## Creating an issue
 
-Navigate to the 'Issues' tab in the repository to see existing issues and create a new one. 
+Navigate to the 'Issues' tab in the repository to see existing issues or create a new issue. To create a new issue, click the green 'New issue' button in the top right. 
 
 For a new issue you can: 
 
@@ -32,7 +32,7 @@ An issue can have both a 'Type' description and a 'Label':
 - The 'Type' defines the primary nature of the issue and can be either 'Bug', 'Feature' or 'Task'. 
 - A 'Label' adds extra information about the issue, such as the level of priority and area of interest. 
 
-An issue can only have one 'Type' but it can have multiple 'Labels'. Both the 'Type' and the 'Labels' can be used for filtering on the 'Issues' page and on a project board. 
+An issue can only have one 'Type' but it can have multiple 'Labels'. Both the 'Type' and the 'Labels' can be used for filtering on the 'Issues' page and on a [project board](project-boards.html). 
 
 ::: callout-tip
 The more detail you can add to a card, the better! 
@@ -51,6 +51,6 @@ New cards are created for each sub-issue. This means you can assign different te
 
 ## Project Boards 
 
-Project boards are a great way of plan, track, and manage a piece of work. They are used alongside issues to manage workflow and collaborate with your team. Read all about project boards and issues [here](project-boards.html). 
+Project boards are a great way to plan, track, and manage a piece of work. They are used alongside issues to manage workflow and collaborate with your team. Read all about project boards and issues [here](project-boards.html). 
 
 

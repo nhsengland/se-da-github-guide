@@ -626,7 +626,7 @@
     "href": "pages/issues.html#creating-an-issue",
     "title": "Raising Issues",
     "section": "Creating an issue",
-    "text": "Creating an issue\nNavigate to the ‘Issues’ tab in the repository to see existing issues and create a new one.\nFor a new issue you can:\n\nName the card and add a description\nAssign someone (including yourself) to do the work\nAdd labels and issue types, including priority labels\n\n\nAn issue can have both a ‘Type’ description and a ‘Label’:\n\nThe ‘Type’ defines the primary nature of the issue and can be either ‘Bug’, ‘Feature’ or ‘Task’.\nA ‘Label’ adds extra information about the issue, such as the level of priority and area of interest.\n\nAn issue can only have one ‘Type’ but it can have multiple ‘Labels’. Both the ‘Type’ and the ‘Labels’ can be used for filtering on the ‘Issues’ page and on a project board.\n\n\n\n\n\n\nTip\n\n\n\nThe more detail you can add to a card, the better!",
+    "text": "Creating an issue\nNavigate to the ‘Issues’ tab in the repository to see existing issues or create a new issue. To create a new issue, click the green ‘New issue’ button in the top right.\nFor a new issue you can:\n\nName the card and add a description\nAssign someone (including yourself) to do the work\nAdd labels and issue types, including priority labels\n\n\nAn issue can have both a ‘Type’ description and a ‘Label’:\n\nThe ‘Type’ defines the primary nature of the issue and can be either ‘Bug’, ‘Feature’ or ‘Task’.\nA ‘Label’ adds extra information about the issue, such as the level of priority and area of interest.\n\nAn issue can only have one ‘Type’ but it can have multiple ‘Labels’. Both the ‘Type’ and the ‘Labels’ can be used for filtering on the ‘Issues’ page and on a project board.\n\n\n\n\n\n\nTip\n\n\n\nThe more detail you can add to a card, the better!",
     "crumbs": [
       "Principles",
       "Raising Issues"
@@ -648,7 +648,7 @@
     "href": "pages/issues.html#project-boards",
     "title": "Raising Issues",
     "section": "Project Boards",
-    "text": "Project Boards\nProject boards are a great way of plan, track, and manage a piece of work. They are used alongside issues to manage workflow and collaborate with your team. Read all about project boards and issues here.",
+    "text": "Project Boards\nProject boards are a great way to plan, track, and manage a piece of work. They are used alongside issues to manage workflow and collaborate with your team. Read all about project boards and issues here.",
     "crumbs": [
       "Principles",
       "Raising Issues"

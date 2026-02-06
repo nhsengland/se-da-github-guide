@@ -22,7 +22,7 @@ To set up a GitHub project board, navigate to "Projects" within your repo:
 ![](pics/project-board-nav-bar.png)
 
 
-Select 'New Project'. You can choose a template to follow (e.g., Kanban board or Roadmap) or you can start from scratch. Here is an example of an empty project board using the Kanban template: 
+Select 'New Project'. You can choose a template to follow (e.g., <a href="https://en.wikipedia.org/wiki/Kanban_board" target="_blank">Kanban board</a> or Roadmap) or you can start from scratch. Here is an example of an empty project board using the Kanban template: 
 
 ![](pics/project-board-template.png)
 
