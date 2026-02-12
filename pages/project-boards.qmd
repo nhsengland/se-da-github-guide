@@ -67,26 +67,46 @@ The more detail you can add to a card, the better!
 
 # Extra features 
 
-## Linking to a branch
-
-You can either: 
-
-- Create a new branch to complete the work
-- Link the card to an existing branch 
-
-![](pics/project-board-branch.png)
-
-This makes it quick & easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will automatically move the to "Done" column. 
-
 ## Sub-issues 
 
 You can create a series of sub-issues related to a card: 
 
 ![](pics/project-board-subissue.png)
 
-New cards are created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues, create individual branches and track progress separately. The relationships section also lets you see which issues and sub-issues are related: 
+A new card is created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues and track progress separately. 
 
-![](pics/project-board-relationships.png){width=250 height=100}
+#### Relationships
+
+The 'Relationships' section on each card shows you which issues and sub-issues are related: 
+
+![](pics/project-board-relationships.png)
+
+You can also see progress of the sub-issues on the parent issue: 
+
+![](pics/project-board-subissue-track.png)
+
+
+#### Blocking
+
+You can set a sub-issue as 'blocked' by clicking the 'Settings' cog next to 'Relationships': 
+
+![](pics/project-board-subissue-blocked.png)
+
+This will then show as 'blocked' on the parent issue: 
+
+![](pics/project-board-blocked-parent.png)
+
+## Linking to a branch
+
+You can either: 
+
+- Create a new branch that will be linked directly to the issue
+- Link the issue to an existing branch 
+
+![](pics/project-board-branch.png)
+
+This makes it quick & easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will **automatically** move to the "Done" column. 
+You can also create different branches for each sub-issue, allowing you to assign different team members and track progress separately.
 
 ## Notifications 
 

@@ -231,8 +231,8 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#extra-features" id="toc-extra-features" class="nav-link" data-scroll-target="#extra-features">Extra features</a>
   <ul class="collapse">
-  <li><a href="#linking-to-a-branch" id="toc-linking-to-a-branch" class="nav-link" data-scroll-target="#linking-to-a-branch">Linking to a branch</a></li>
   <li><a href="#sub-issues" id="toc-sub-issues" class="nav-link" data-scroll-target="#sub-issues">Sub-issues</a></li>
+  <li><a href="#linking-to-a-branch" id="toc-linking-to-a-branch" class="nav-link" data-scroll-target="#linking-to-a-branch">Linking to a branch</a></li>
   <li><a href="#notifications" id="toc-notifications" class="nav-link" data-scroll-target="#notifications">Notifications</a></li>
   </ul></li>
   </ul>
@@ -338,22 +338,35 @@ Tip
 </section>
 <section id="extra-features" class="level1">
 <h1>Extra features</h1>
-<section id="linking-to-a-branch" class="level2">
-<h2 class="anchored" data-anchor-id="linking-to-a-branch">Linking to a branch</h2>
-<p>You can either:</p>
-<ul>
-<li>Create a new branch to complete the work</li>
-<li>Link the card to an existing branch</li>
-</ul>
-<p><img src="pics/project-board-branch.png" class="img-fluid"></p>
-<p>This makes it quick &amp; easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will automatically move the to “Done” column.</p>
-</section>
 <section id="sub-issues" class="level2">
 <h2 class="anchored" data-anchor-id="sub-issues">Sub-issues</h2>
 <p>You can create a series of sub-issues related to a card:</p>
 <p><img src="pics/project-board-subissue.png" class="img-fluid"></p>
-<p>New cards are created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues, create individual branches and track progress separately. The relationships section also lets you see which issues and sub-issues are related:</p>
-<p><img src="pics/project-board-relationships.png" width="250" height="100"></p>
+<p>A new card is created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues and track progress separately.</p>
+<section id="relationships" class="level4">
+<h4 class="anchored" data-anchor-id="relationships">Relationships</h4>
+<p>The ‘Relationships’ section on each card shows you which issues and sub-issues are related:</p>
+<p><img src="pics/project-board-relationships.png" class="img-fluid"></p>
+<p>You can also see progress of the sub-issues on the parent issue:</p>
+<p><img src="pics/project-board-subissue-track.png" class="img-fluid"></p>
+</section>
+<section id="blocking" class="level4">
+<h4 class="anchored" data-anchor-id="blocking">Blocking</h4>
+<p>You can set a sub-issue as ‘blocked’ by clicking the ‘Settings’ cog next to ‘Relationships’:</p>
+<p><img src="pics/project-board-subissue-blocked.png" class="img-fluid"></p>
+<p>This will then show as ‘blocked’ on the parent issue:</p>
+<p><img src="pics/project-board-blocked-parent.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="linking-to-a-branch" class="level2">
+<h2 class="anchored" data-anchor-id="linking-to-a-branch">Linking to a branch</h2>
+<p>You can either:</p>
+<ul>
+<li>Create a new branch that will be linked directly to the issue</li>
+<li>Link the issue to an existing branch</li>
+</ul>
+<p><img src="pics/project-board-branch.png" class="img-fluid"></p>
+<p>This makes it quick &amp; easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will <strong>automatically</strong> move to the “Done” column. You can also create different branches for each sub-issue, allowing you to assign different team members and track progress separately.</p>
 </section>
 <section id="notifications" class="level2">
 <h2 class="anchored" data-anchor-id="notifications">Notifications</h2>
