@@ -51,7 +51,7 @@ You can edit column names and descriptions, hide or delete columns or reorder th
 ![](pics/project-board-column-edits.png){width=275 height=350}
 
 ## Adding cards
-Use the "Add item" button at the bottom of each column to create a new card. For a new issue you can: 
+Use the "Add item" button at the bottom of each column to create a new card. Either click the "+" or start typing and select "Create new issue". Click "Blank issue" to create an issue without a template. For a new issue you can: 
 
 - Name the card and add a description
 - Assign someone (including yourself) to do the work
