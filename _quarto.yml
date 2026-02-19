@@ -19,17 +19,19 @@ website:
       - section: "GitHub Guides"
         contents:
           - pages/first-repo.qmd
+          - pages/qasar.qmd
+          - pages/issues.qmd
+          - pages/project-boards.qmd
+      - section: "GitHub in IDEs"
+        contents:
           - pages/github-desktop.qmd
           - pages/r-studio.qmd
           - pages/vs-code.qmd
           - pages/databricks-github.qmd
           - pages/fdp.qmd
-          - pages/project-boards.qmd
       - section: "Principles"
         contents:
           - pages/understanding-code.qmd
-          - pages/qasar.qmd
-          - pages/issues.qmd
       - section: "Placeholder"
         contents:
           - pages/another-page.qmd
