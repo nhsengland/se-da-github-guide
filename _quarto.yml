@@ -22,7 +22,7 @@ website:
           - pages/qasar.qmd
           - pages/issues.qmd
           - pages/project-boards.qmd
-      - section: "GitHub in IDEs"
+      - section: "Git in IDEs"
         contents:
           - pages/github-desktop.qmd
           - pages/r-studio.qmd

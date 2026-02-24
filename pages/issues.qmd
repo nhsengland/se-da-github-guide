@@ -70,6 +70,8 @@ Closing an issue is essential as it shows that the issue is no longer outstandin
 If closed, the content is not deleted, and the issue can be reopened later if required.
 :::
 
+An issue will automatically close if it had a pull request connected that was merged.
+
 ## Project Boards 
 
 Project boards are a great way to plan, track, and manage a piece of work. They are used alongside issues to manage workflow and collaborate with your team. Read all about project boards and issues [here](project-boards.html). 
