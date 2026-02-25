@@ -112,67 +112,67 @@
   {
     "objectID": "pages/qasar.html",
     "href": "pages/qasar.html",
-    "title": "QA on GitHub",
+    "title": "Pull Requests and QA",
     "section": "",
     "text": "Just need a quick reminder? This flowchart shows a summary of the process. Scroll down to see more detail about the steps.\n\n\n\n\n\n\n\nNote\n\n\n\nThis process can be managed in GitHub desktop, VS Code, RStudio, or the IDE you are most comfortable with.",
     "crumbs": [
-      "Principles",
-      "QA on GitHub"
+      "GitHub Guides",
+      "Pull Requests and QA"
     ]
   },
   {
     "objectID": "pages/qasar.html#summary",
     "href": "pages/qasar.html#summary",
-    "title": "QA on GitHub",
+    "title": "Pull Requests and QA",
     "section": "",
     "text": "Just need a quick reminder? This flowchart shows a summary of the process. Scroll down to see more detail about the steps.\n\n\n\n\n\n\n\nNote\n\n\n\nThis process can be managed in GitHub desktop, VS Code, RStudio, or the IDE you are most comfortable with.",
     "crumbs": [
-      "Principles",
-      "QA on GitHub"
+      "GitHub Guides",
+      "Pull Requests and QA"
     ]
   },
   {
     "objectID": "pages/qasar.html#remember-the-principles-of-branching",
     "href": "pages/qasar.html#remember-the-principles-of-branching",
-    "title": "QA on GitHub",
+    "title": "Pull Requests and QA",
     "section": "Remember the principles of branching",
     "text": "Remember the principles of branching\nFirst let’s remind ourselves of the principles of branching (see here for an intro to branching):\n\nAll code in the main branch should be fully QA’d and functional - even if this means that the repo is almost empty initially.\nNew developments and changes should be coded in their own branch: one branch per ‘feature’. Give the branch a name that helps you identify what a change relates to.\nIf working on larger changes, it may be best to break it down into smaller steps and develop and QA iteratively - you can branch off your branch to help with this.\nGitHub will provide an audit trail of changes made, when they were made, and who made them. This aligns nicely with the team’s QASAR process. It is also easy to roll back to an earlier version if needed.\n\n\n\n\n\n\n\nNote\n\n\n\nRemember that we don’t have enterprise licences so we can’t protect our main branches. Changes can be merged without review so be careful.",
     "crumbs": [
-      "Principles",
-      "QA on GitHub"
+      "GitHub Guides",
+      "Pull Requests and QA"
     ]
   },
   {
     "objectID": "pages/qasar.html#planned-qa-process",
     "href": "pages/qasar.html#planned-qa-process",
-    "title": "QA on GitHub",
+    "title": "Pull Requests and QA",
     "section": "1. Planned QA Process",
     "text": "1. Planned QA Process\n\nCheck\nThere are a couple of checks to do before QA kicks off properly.\nIf you are the author:\n\nCheck that your code is intentionally commented.\nThe changes you have made are complete, self-reviewed, and saved.\nYou may want to include the author and latest modification date at the top (although GitHub will help manage this for you).\nEnsure that you have committed and pushed the latest changes so that the person QA-ing has the most recent version.\nMake sure that the reviewer is a collaborator in the repo settings.\nEnsure any files (e.g. config) required for the code are uploaded onto SharePoint for the reviewer to use.\n\nIf you are the reviewer:\n\nMake sure that you have the time, access, and knowledge to do the review.\n\n\n\nCreating a Pull Request (how the author requests QA)\nGiven that all your changes are in a new feature branch, the QA process boils down to pull requests.\n\nOn your repository, navigate to the branches list\nClick on the 3 dots for the branch you want to be QA’d and click New pull request\n\n\n\nAdd a description of what needs to be QA’d, why changes have been made, location of any required files (links to public data, or files on SharePoint path from Analysis/ onwards only!) in order to run the code, and any specific QA requests\nAdd a reviewer (the person you want to QA) and\nAdd an assignee (usually you, the person responsible for merging the branch once QA has passed)\nClick create pull request\n\nHere’s an example of a filled in pull request.\n\n\n\n\n\n\n\nTip\n\n\n\nThis is the notation to create a checklist:\n- [] Item 1\n- [] Item 2\n\n\n\n\nComplete QA - the reviewer\nOnce you’ve been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes.\n\n\n\n\n\n\n\nTip\n\n\n\nAdditions will be in green and removals in red\n\n\nReview the QA checklist and files changed list. Add comments and request changes where necessary. The best way to do this is often to clone the repository to your local area, and run the code yourself.\n\nOnce on the Pull Request page, navigate to the Files changed tab to see the code.\nComments can be added in-line with code. If you do this, click Start a Review if you want all the comments to be sent over at once, at the end of your review.\n\nAfter reviewing the code, as reviewer, you decide what the verdict is. Click “Review Changes” and leave an overall comment, with one of the following options:\n- Comment - Submit general feedback without explicit approval\n- Approve - Submit feedback and approve merging these changes\n- Request changes - Submit feedback that must be addressed before merging\n\nCommentApproveRequest changes\n\n\nIf as the reviewer, you think there could be some improvements, or you’re not sure about xyz, this is a good way to convey that.\n\n\n\nIf as the reviewer, you’re happy with the piece of work, and want the author to merge this into main branch with no edits, this is what you want.\n \n\n\nIf as the reviewer, you’ve spotted something which needs to be changed before being merged into main, you can request changes to deny the pull request until those are actioned.\n\n\n\n\n\n\nMerge and tidy - the author\nAt this stage, the work now sits back with the author.\nIf the author decides to make changes on the back of the review, these changes should be made on the same branch. The author should decide if another review is required (correcting a spelling error doesn’t require one, but changing methodology may). If so, the author can use re-request review on the same pull request, notifying the reviewer.\nAfter any changes are made, the branch is ready to merge. Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!\n\nThe author should then update the README (directly onto the main branch is fine) with QASAR information including level of QA, who conducted QA, and sign off. This information is included in the se-template and makes QASAR information easy to find. Further detail is available in the repo history.",
     "crumbs": [
-      "Principles",
-      "QA on GitHub"
+      "GitHub Guides",
+      "Pull Requests and QA"
     ]
   },
   {
     "objectID": "pages/qasar.html#what-to-do-if-you-spot-an-issue-or-have-an-idea",
     "href": "pages/qasar.html#what-to-do-if-you-spot-an-issue-or-have-an-idea",
-    "title": "QA on GitHub",
+    "title": "Pull Requests and QA",
     "section": "2. What to do if you spot an issue or have an idea",
     "text": "2. What to do if you spot an issue or have an idea\nIf you are not within the designated QA process, it is still possible that, in using the code, you see a bug or you have a suggestion for a development. You can do that by creating issues. Any user with read access to a repo can create an issue (assuming that issues are enabled for the repo).\n\n\nThe process\n\n[You, the idea-haver or bug-spotter] Create an issue detailing the problem or idea (help here: https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue).\n[You] If the error or bug is solvable and you feel inclined, you have the option to create a branch that addresses the issue. You can link the pull request with the issue (https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).\n[The author] The person managing the code can add the issue number to any relevant ticket on the task board.\n[The author] The error, bug, or development can be prioritised and actions. Their pull request can also be linked with the issue (https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).\nIssues linked with a pull request will close automatically when they are merged. If not, they can be closed by users with triage permission or greater (https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/closing-an-issue).",
     "crumbs": [
-      "Principles",
-      "QA on GitHub"
+      "GitHub Guides",
+      "Pull Requests and QA"
     ]
   },
   {
     "objectID": "pages/qasar.html#summary-of-the-process",
     "href": "pages/qasar.html#summary-of-the-process",
-    "title": "QA on GitHub",
+    "title": "Pull Requests and QA",
     "section": "Summary of the process",
     "text": "Summary of the process",
     "crumbs": [
-      "Principles",
-      "QA on GitHub"
+      "GitHub Guides",
+      "Pull Requests and QA"
     ]
   },
   {
@@ -182,7 +182,7 @@
     "section": "",
     "text": "For those that want do more version control and collaboration, GitHub desktop is a good place to start.\n\n\nFirst step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for GitHub. You want to download the app with the purple cat.\n\nYou will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).\nIf you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.\n\n\n\n\n\n\nEven though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see here for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.\n\n\n\n\n\n\nSetting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.\n\n\n\nThis file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the R gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.\n\n\n\nFiles can be added to the gitignore manually by right clicking on a file in the Changes section of GitHub desktop, and clicking Ignore file. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g. .csv files)\n\n\n\nYou can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.\nAlternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.\n\n\n\n\nIndividual files: you can ignore individual files by typing the filename\nWhole filetypes: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g. *.xlsx\nFolders and subfolders: if you don’t want a whole folder included, you can just name the folder path e.g. /data\n\n\n\n\n\nUntil you click Publish repository, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.\nYou should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.\nAny changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop changes section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click Commit to main.\n\n\n\n\n\n\nTip\n\n\n\nA green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.\n\n\n\nYou can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately\n\n\n\nIf you need to review or revisit any prior commits, you can see these in the History tab.\n\n\n\n\n\nAll that’s left to do is share your repo to github. This is as easy as clicking the Publish repository button.\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!\n\n\nYou can also pull any changes from github down to your local machine by clicking Pull origin in the top bar\n\n\n\nAs well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:\n\nFrom the browser\nFrom the desktop app\n\n\n\nThis is really easy. Navigate to the repo you want to work on. Click the green &lt;&gt; Code button, and then Open with GitHub Desktop. Easy.\n\n\n\n\nThis is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.",
     "crumbs": [
-      "GitHub Guides",
+      "GitHub in other IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -193,7 +193,7 @@
     "section": "",
     "text": "First step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for GitHub. You want to download the app with the purple cat.\n\nYou will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).\nIf you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.",
     "crumbs": [
-      "GitHub Guides",
+      "GitHub in other IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -204,7 +204,7 @@
     "section": "",
     "text": "Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see here for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.\n\n\n\n\n\n\nSetting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.\n\n\n\nThis file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the R gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.\n\n\n\nFiles can be added to the gitignore manually by right clicking on a file in the Changes section of GitHub desktop, and clicking Ignore file. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g. .csv files)\n\n\n\nYou can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.\nAlternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.\n\n\n\n\nIndividual files: you can ignore individual files by typing the filename\nWhole filetypes: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g. *.xlsx\nFolders and subfolders: if you don’t want a whole folder included, you can just name the folder path e.g. /data\n\n\n\n\n\nUntil you click Publish repository, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.\nYou should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.\nAny changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop changes section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click Commit to main.\n\n\n\n\n\n\nTip\n\n\n\nA green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.\n\n\n\nYou can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately\n\n\n\nIf you need to review or revisit any prior commits, you can see these in the History tab.",
     "crumbs": [
-      "GitHub Guides",
+      "GitHub in other IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -215,7 +215,7 @@
     "section": "",
     "text": "All that’s left to do is share your repo to github. This is as easy as clicking the Publish repository button.\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!\n\n\nYou can also pull any changes from github down to your local machine by clicking Pull origin in the top bar",
     "crumbs": [
-      "GitHub Guides",
+      "GitHub in other IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -226,7 +226,7 @@
     "section": "",
     "text": "As well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:\n\nFrom the browser\nFrom the desktop app\n\n\n\nThis is really easy. Navigate to the repo you want to work on. Click the green &lt;&gt; Code button, and then Open with GitHub Desktop. Easy.\n\n\n\n\nThis is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.",
     "crumbs": [
-      "GitHub Guides",
+      "GitHub in other IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -387,41 +387,45 @@
   {
     "objectID": "pages/intro-to-github.html",
     "href": "pages/intro-to-github.html",
-    "title": "An Introduction to GitHub",
+    "title": "GitHub Basic Concepts",
     "section": "",
     "text": "Git is a version control system. It allows you to track different versions of your files and control source code.\nGitHub is an online repository which hosts open source projects. It is not the same as Git\nThere are other alternatives to GitHub, for example GitLab or DevOps, which is part of Azure and is integrated in UDAL.",
     "crumbs": [
-      "An Introduction to GitHub"
+      "GitHub Guides",
+      "GitHub Basic Concepts"
     ]
   },
   {
     "objectID": "pages/intro-to-github.html#what-is-git-what-is-github-and-are-they-the-same-thing.",
     "href": "pages/intro-to-github.html#what-is-git-what-is-github-and-are-they-the-same-thing.",
-    "title": "An Introduction to GitHub",
+    "title": "GitHub Basic Concepts",
     "section": "",
     "text": "Git is a version control system. It allows you to track different versions of your files and control source code.\nGitHub is an online repository which hosts open source projects. It is not the same as Git\nThere are other alternatives to GitHub, for example GitLab or DevOps, which is part of Azure and is integrated in UDAL.",
     "crumbs": [
-      "An Introduction to GitHub"
+      "GitHub Guides",
+      "GitHub Basic Concepts"
     ]
   },
   {
     "objectID": "pages/intro-to-github.html#key-concepts",
     "href": "pages/intro-to-github.html#key-concepts",
-    "title": "An Introduction to GitHub",
+    "title": "GitHub Basic Concepts",
     "section": "Key Concepts",
     "text": "Key Concepts\n\nWhat is a repository?\n\nA repository is a place that contains all your code and files associated with a piece of work.\nGenerally, you would have a separate repository for each of your projects.\nSee here for a guide on how to create a repository in the SE D&A area.\n\n\n\nCloning\n\nWhat is cloning?\n\nCloning a Git repository means creating a local copy of a remote repository on your computer.\nOnce you have cloned a repository, you can start working on the project, making and saving changes, and committing them to your local repository, without changing the remote version.\n\n\n\nWhy clone?\n\nContribute to group projects - where multiple people work on the same code base, cloning enables individuals to edit and save the code without impacting on other users.\nMake use of other open source repositories - you can use and edit code from other people’s code, even if you don’t know them.\n\n\n\n\nBranching\n\nWhat is branching and why do we use it?\nA branch is a separate version of the main repository. Branching allows you to work on a different part of a project without impacting the main repository. When any development or work is complete, a branch can be merged with the main repository.\n\n\n\n\n\n\n\nNote\n\n\n\nYou can read more about the lego analogy here (https://opensource.com/article/22/4/git-branches/).\n\n\n\n\n\nFetching\n\n\n\n\n\nGiven that one of the strengths of using Git and GitHub is that we can all work collaboratively, it is important to make sure that the version we are using is up to date with any changes that have been made to the repository. This is what fetching does.\n\nFetch lets us review what changes have been made in the remote repository before we add them to our local version.\nThe alternative option is called pulling. The difference here is that this automatically makes changes from the remote repository to the local version.\nFetch is the safer option as it lets us see what any changes are before we adopt them.\n\n\n\n\nStaging, Committing, and Pushing\nOnce you have made a change to a script you can stage it, the next step is to commit it, and finally you can push it to the remote repository.\n\n\n\n\n\n\nImportant\n\n\n\nBefore any of these steps, you should check that you haven’t included anything sensitive that shouldn’t be shared e.g. data.\n\n\nStaging allows you to group any changes to different, but related, files so that they are in the same commit.\nYou may choose not to push your committed changes immediately e.g. if you are still in the process of making changes, but it allows you to separate your changes into stages and keep a record of those. Commits are the units of undo i.e. you can roll back the changes by commit, so it’s worth thinking about what you include in each commit (and don’t make them too large).\n\n\nPull requests\nA pull request is how you make a request to merge your branch to another branch e.g. move your changes to the main branch. If there are things that disagree between the branches that you are trying to merge, this is called a conflict. You have to resolve these before you can merge. If there are no conflicts, your pull request can be actioned immediately and the branches will be merged.",
     "crumbs": [
-      "An Introduction to GitHub"
+      "GitHub Guides",
+      "GitHub Basic Concepts"
     ]
   },
   {
     "objectID": "pages/intro-to-github.html#the-.gitignore",
     "href": "pages/intro-to-github.html#the-.gitignore",
-    "title": "An Introduction to GitHub",
+    "title": "GitHub Basic Concepts",
     "section": "The .gitignore",
     "text": "The .gitignore\nSometimes our projects contain information or data that is sensitive and we do not want to publish or track this information. A .gitignore is a file that contains all of the files and folders from the project that you do not want Git to log and track.\nYou have some options for specifying files in the gitignore. Common ones are below:\n\nYou can explicitly reference a file path within the project structure e.g.to ignore a file called data_load in a folder called helper:\n\n\nhelper/data_load.R\n\n\nYou can ignore all files of a certain extension e.g. to ignore all .xlsx files:\n\n\n*.xlsx\n\n\nYou can add whole folders to the gitignore e.g. to ignore the folder called output:\n\n\noutput/\n\n\nYou can exclude files from the gitignore e.g. you want to ignore all .pptx files except the one called final.pptx:\n\n\n*.pptx !final.pptx\n\n\n\n\n\n\n\nTip\n\n\n\nIn GitHub desktop you can add files to the gitignore by right clicking on the file and clicking Ignore file. Or add all files of that type by right clicking and choosing e.g. Ignore all .xlsx files. In VSCode, ignored files are greyed out in the file explorer.\n\n\nYour repository should always have a gitignore file in the root folder. When you initialise a repo you can choose to use a gitignore tailored to particular programming languages but the South East template repo has a gitignore that should be a good place to start.\n\n\n\n\n\n\nTip\n\n\n\nIf you are looking to create a .gitignore that covers a wide range of software, websites such as (https://www.toptal.com/developers/gitignore?) can be worth playing with",
     "crumbs": [
-      "An Introduction to GitHub"
+      "GitHub Guides",
+      "GitHub Basic Concepts"
     ]
   },
   {
@@ -606,7 +610,7 @@
     "section": "",
     "text": "If you spot a bug, have a suggestion for development or want to ask a question, you can do this by creating an issue.\nAn issue:\n\nCaptures a problem or idea: Anything from “the Rmd crashes when I click X” to “we should make this chart blue”.\nCreates a place for discussion: Team members can comment, ask questions, or suggest solutions.\nKeeps work organised: Issues can be labelled, assigned, linked to pull requests, or grouped into milestones.\nDocuments decisions and progress: The whole conversation stays visible, so anyone can see what happened and why.",
     "crumbs": [
-      "Principles",
+      "GitHub Guides",
       "Raising Issues"
     ]
   },
@@ -617,7 +621,7 @@
     "section": "",
     "text": "If you spot a bug, have a suggestion for development or want to ask a question, you can do this by creating an issue.\nAn issue:\n\nCaptures a problem or idea: Anything from “the Rmd crashes when I click X” to “we should make this chart blue”.\nCreates a place for discussion: Team members can comment, ask questions, or suggest solutions.\nKeeps work organised: Issues can be labelled, assigned, linked to pull requests, or grouped into milestones.\nDocuments decisions and progress: The whole conversation stays visible, so anyone can see what happened and why.",
     "crumbs": [
-      "Principles",
+      "GitHub Guides",
       "Raising Issues"
     ]
   },
@@ -626,9 +630,9 @@
     "href": "pages/issues.html#creating-an-issue",
     "title": "Raising Issues",
     "section": "Creating an issue",
-    "text": "Creating an issue\nNavigate to the ‘Issues’ tab in the repository to see existing issues or create a new issue. To create a new issue, click the green ‘New issue’ button in the top right.\nFor a new issue you can:\n\nName the card and add a description\nAssign someone (including yourself) to do the work\nAdd labels and issue types, including priority labels\n\n\nAn issue can have both a ‘Type’ description and a ‘Label’:\n\nThe ‘Type’ defines the primary nature of the issue and can be either ‘Bug’, ‘Feature’ or ‘Task’.\nA ‘Label’ adds extra information about the issue, such as the level of priority and area of interest.\n\nAn issue can only have one ‘Type’ but it can have multiple ‘Labels’. Both the ‘Type’ and the ‘Labels’ can be used for filtering on the ‘Issues’ page and on a project board.\n\n\n\n\n\n\nTip\n\n\n\nThe more detail you can add to a card, the better!",
+    "text": "Creating an issue\nNavigate to the ‘Issues’ tab in the repository to see existing issues or create a new issue. To create a new issue, click the green ‘New issue’ button in the top right.\nFor a new issue you can:\n\nName the card and add a description\nAssign someone (including yourself) to do the work\nAdd labels and issue types, including priority labels\n\n\nAn issue can have both a ‘Type’ description and a ‘Label’:\n\nThe ‘Type’ defines the primary nature of the issue and can be either ‘Bug’, ‘Feature’ or ‘Task’.\nA ‘Label’ adds extra information about the issue, such as the level of priority and area of interest.\n\nAn issue can only have one ‘Type’ but it can have multiple ‘Labels’. Both the ‘Type’ and the ‘Labels’ can be used for filtering on the ‘Issues’ page and on a project board.\n\n\n\n\n\n\nTip\n\n\n\nThe more detail you can add to a card, the better!\n\n\nDo not add sensitive data or SharePoint links etc to issues, treat them like other areas on GitHub.",
     "crumbs": [
-      "Principles",
+      "GitHub Guides",
       "Raising Issues"
     ]
   },
@@ -639,7 +643,7 @@
     "section": "Sub-issues",
     "text": "Sub-issues\nYou can create a series of sub-issues related to an issue:\n\nNew cards are created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues, create individual branches and track progress separately. The relationships section also lets you see which issues and sub-issues are related:",
     "crumbs": [
-      "Principles",
+      "GitHub Guides",
       "Raising Issues"
     ]
   },
@@ -650,7 +654,7 @@
     "section": "Project Boards",
     "text": "Project Boards\nProject boards are a great way to plan, track, and manage a piece of work. They are used alongside issues to manage workflow and collaborate with your team. Read all about project boards and issues here.",
     "crumbs": [
-      "Principles",
+      "GitHub Guides",
       "Raising Issues"
     ]
   },
@@ -663,6 +667,17 @@
     "crumbs": [
       "GitHub Guides",
       "Using Project Boards"
+    ]
+  },
+  {
+    "objectID": "pages/issues.html#closing-an-issue",
+    "href": "pages/issues.html#closing-an-issue",
+    "title": "Raising Issues",
+    "section": "Closing an issue",
+    "text": "Closing an issue\nClosing an issue means it is no longer required. Issues can be closed for the following reasons:\n\nCompleted - e.g. change has been done, closed, fixed, or resolved\nNot planned - e.g. decide not to make the change, can’t reproduce the bug, change no longer required\nDuplicate - this is a duplicate of another issue\n\nYou may wish to add a comment to provide context of closing the issue.\n\nWhen closing as duplicate, it will prompt you to choose the issue that the issue your closing is a duplicate of. You may wish to close the newest duplicate, or the one with less information on the card, but it doesn’t matter too much as the closed issue information can be found on the duplicate issue card which remained open\n\nClosing an issue is essential as it shows that the issue is no longer outstanding. Closed issues will not appear by default on the “Issues” tab as this view is for open issues.\n\n\n\n\n\n\nTip\n\n\n\nIf closed, the content is not deleted, and the issue can be reopened later if required.\n\n\nAn issue will automatically close if it had a pull request connected that was merged.",
+    "crumbs": [
+      "GitHub Guides",
+      "Raising Issues"
     ]
   }
 ]

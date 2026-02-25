@@ -15,21 +15,23 @@ website:
     style: "docked"
     search: true
     contents:
-      - pages/intro-to-github.qmd
       - section: "GitHub Guides"
         contents:
           - pages/first-repo.qmd
+          - pages/intro-to-github.qmd
+          - pages/qasar.qmd
+          - pages/issues.qmd
+          - pages/project-boards.qmd
+      - section: "Git in IDEs"
+        contents:
           - pages/github-desktop.qmd
           - pages/r-studio.qmd
           - pages/vs-code.qmd
           - pages/databricks-github.qmd
           - pages/fdp.qmd
-          - pages/project-boards.qmd
       - section: "Principles"
         contents:
           - pages/understanding-code.qmd
-          - pages/qasar.qmd
-          - pages/issues.qmd
       - section: "Placeholder"
         contents:
           - pages/another-page.qmd

@@ -35,6 +35,8 @@ Set the repository as the "Default Repository". This will link all cards directl
 
 ![](pics/project-board-settings.png)
 
+By default, **only users who have access to the repo can access the project board**. If in doubt, you can check the project settings.
+
 # Using your Project Board 
 
 The Kanban project board template has the following columns: 
