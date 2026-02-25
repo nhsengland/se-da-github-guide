@@ -38,6 +38,8 @@ An issue can only have one 'Type' but it can have multiple 'Labels'. Both the 'T
 The more detail you can add to a card, the better! 
 :::
 
+Do not add sensitive data or SharePoint links etc to issues, treat them like other areas on GitHub.
+
 ## Sub-issues 
 
 You can create a series of sub-issues related to an issue: 
