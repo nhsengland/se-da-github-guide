@@ -1,5 +1,5 @@
 ---
-title: "QA on GitHub"
+title: "Pull Requests and QA"
 ---
 
 ## Summary

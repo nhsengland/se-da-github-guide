@@ -15,10 +15,10 @@ website:
     style: "docked"
     search: true
     contents:
-      - pages/intro-to-github.qmd
       - section: "GitHub Guides"
         contents:
           - pages/first-repo.qmd
+          - pages/intro-to-github.qmd
           - pages/qasar.qmd
           - pages/issues.qmd
           - pages/project-boards.qmd
