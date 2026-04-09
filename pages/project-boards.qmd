@@ -4,7 +4,7 @@ title: "Using Project Boards"
 
 ## What is a project board? {#project-boards}
 
-A project board is a tool that helps you plan, track, and manage a piece of work. Visually similar to a Microsoft Teams Planner board, it's made up of columns and cards:
+A project board is a tool that helps you plan, track, and manage a piece of work. The Kanban Board is a type of project board. It is visually similar to a Microsoft Teams Planner board, it's made up of columns and cards:
 
 -   Columns represent stages of work, e.g., To Do, In Progress, Done
 -   Cards represent tasks. These can be issues, pull requests, or notes.
@@ -13,7 +13,7 @@ Project boards connect directly to your GitHub repository. That means:
 
 -   When someone opens an issue, you can add it to the board as a card.
 -   When a pull request is opened or merged, the card can move automatically.
--   **Everyone on the team sees the same board, so it’s easy to collaborate**
+-   **Everyone on the team sees the same board, so it’s easy to collaborate.**
 
 # Setting up a Project Board
 
@@ -45,7 +45,7 @@ The Kanban project board template has the following columns:
 - Ready: items ready to be picked up 
 - In progress: items being actively worked on 
 - In review: items currently being reviewed 
-- Done: items that have been completed. 
+- Done: items that have been completed 
 
 ## Editing the template 
 You can edit column names and descriptions, hide or delete columns or reorder the columns by clicking the three dots in the top-right: 
@@ -107,7 +107,7 @@ You can either:
 
 ![](pics/project-board-branch.png)
 
-This makes it quick & easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will **automatically** move to the "Done" column. 
+This makes it quick & easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will **automatically** move to the "Done" column if the appropriate GitHub Workflow is set up (normally is by default). 
 You can also create different branches for each sub-issue, allowing you to assign different team members and track progress separately.
 
 ## Notifications 
