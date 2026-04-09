@@ -487,7 +487,7 @@
     "href": "pages/project-boards.html",
     "title": "Using Project Boards",
     "section": "",
-    "text": "A project board is a tool that helps you plan, track, and manage a piece of work. Visually similar to a Microsoft Teams Planner board, it’s made up of columns and cards:\n\nColumns represent stages of work, e.g., To Do, In Progress, Done\nCards represent tasks. These can be issues, pull requests, or notes.\n\nProject boards connect directly to your GitHub repository. That means:\n\nWhen someone opens an issue, you can add it to the board as a card.\nWhen a pull request is opened or merged, the card can move automatically.\nEveryone on the team sees the same board, so it’s easy to collaborate",
+    "text": "A project board is a tool that helps you plan, track, and manage a piece of work. The Kanban Board is a type of project board. It is visually similar to a Microsoft Teams Planner board, it’s made up of columns and cards:\n\nColumns represent stages of work, e.g., To Do, In Progress, Done\nCards represent tasks. These can be issues, pull requests, or notes.\n\nProject boards connect directly to your GitHub repository. That means:\n\nWhen someone opens an issue, you can add it to the board as a card.\nWhen a pull request is opened or merged, the card can move automatically.\nEveryone on the team sees the same board, so it’s easy to collaborate.",
     "crumbs": [
       "GitHub Guides",
       "Using Project Boards"
@@ -531,7 +531,7 @@
     "href": "pages/project-boards.html#adding-cards",
     "title": "Using Project Boards",
     "section": "Adding cards",
-    "text": "Adding cards\nUse the “Add item” button at the bottom of each column to create a new card. For a new issue you can:\n\nName the card and add a description\nAssign someone (including yourself) to do the work\nAdd labels and issue types, including priority labels\n\nYou can also add a card that links to an existing issue.\n\n\n\n\n\n\n\nTip\n\n\n\nThe more detail you can add to a card, the better!",
+    "text": "Adding cards\nUse the “Add item” button at the bottom of each column to create a new card. Either click the “+” or start typing and select “Create new issue”. Click “Blank issue” to create an issue without a template. For a new issue you can:\n\nName the card and add a description\nAssign someone (including yourself) to do the work\nAdd labels and issue types, including priority labels\n\nYou can also add a card that links to an existing issue.\n\n\n\n\n\n\n\nTip\n\n\n\nThe more detail you can add to a card, the better!",
     "crumbs": [
       "GitHub Guides",
       "Using Project Boards"
@@ -575,7 +575,7 @@
     "href": "pages/project-boards.html#linking-to-a-branch",
     "title": "Using Project Boards",
     "section": "Linking to a branch",
-    "text": "Linking to a branch\nYou can either:\n\nCreate a new branch to complete the work\nLink the card to an existing branch\n\n\nThis makes it quick & easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will automatically move the to “Done” column.",
+    "text": "Linking to a branch\nYou can either:\n\nCreate a new branch that will be linked directly to the issue\nLink the issue to an existing branch\n\n\nThis makes it quick & easy navigate to the pull request for the branch, track progress during QA and see any comments written before the branch was merged into main. When the branch is merged with main, the linked card will automatically move to the “Done” column if the appropriate GitHub Workflow is set up (normally is by default). You can also create different branches for each sub-issue, allowing you to assign different team members and track progress separately.",
     "crumbs": [
       "GitHub Guides",
       "Using Project Boards"
@@ -586,7 +586,7 @@
     "href": "pages/project-boards.html#sub-issues",
     "title": "Using Project Boards",
     "section": "Sub-issues",
-    "text": "Sub-issues\nYou can create a series of sub-issues related to a card:\n\nNew cards are created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues, create individual branches and track progress separately. The relationships section also lets you see which issues and sub-issues are related:",
+    "text": "Sub-issues\nYou can create a series of sub-issues related to a card:\n\nA new card is created for each sub-issue. This means you can assign different team members (or yourself) to different sub-issues and track progress separately.\n\nRelationships\nThe ‘Relationships’ section on each card shows you which issues and sub-issues are related:\n\nYou can also see progress of the sub-issues on the parent issue:\n\n\n\nBlocking\nYou can set a sub-issue as ‘blocked’ by clicking the ‘Settings’ cog next to ‘Relationships’:\n\nThis will then show as ‘blocked’ on the parent issue:",
     "crumbs": [
       "GitHub Guides",
       "Using Project Boards"
@@ -663,7 +663,7 @@
     "href": "pages/project-boards.html#project-boards",
     "title": "Using Project Boards",
     "section": "",
-    "text": "A project board is a tool that helps you plan, track, and manage a piece of work. Visually similar to a Microsoft Teams Planner board, it’s made up of columns and cards:\n\nColumns represent stages of work, e.g., To Do, In Progress, Done\nCards represent tasks. These can be issues, pull requests, or notes.\n\nProject boards connect directly to your GitHub repository. That means:\n\nWhen someone opens an issue, you can add it to the board as a card.\nWhen a pull request is opened or merged, the card can move automatically.\nEveryone on the team sees the same board, so it’s easy to collaborate",
+    "text": "A project board is a tool that helps you plan, track, and manage a piece of work. The Kanban Board is a type of project board. It is visually similar to a Microsoft Teams Planner board, it’s made up of columns and cards:\n\nColumns represent stages of work, e.g., To Do, In Progress, Done\nCards represent tasks. These can be issues, pull requests, or notes.\n\nProject boards connect directly to your GitHub repository. That means:\n\nWhen someone opens an issue, you can add it to the board as a card.\nWhen a pull request is opened or merged, the card can move automatically.\nEveryone on the team sees the same board, so it’s easy to collaborate.",
     "crumbs": [
       "GitHub Guides",
       "Using Project Boards"
