@@ -38,6 +38,8 @@ An issue can only have one 'Type' but it can have multiple 'Labels'. Both the 'T
 The more detail you can add to a card, the better! 
 :::
 
+Do not add sensitive data or SharePoint links etc to issues, treat them like other areas on GitHub.
+
 ## Sub-issues 
 
 You can create a series of sub-issues related to an issue: 
@@ -48,6 +50,29 @@ New cards are created for each sub-issue. This means you can assign different te
 
 ![](pics/project-board-relationships.png){width=250 height=100}
 
+## Closing an issue
+
+Closing an issue means it is no longer required. Issues can be closed for the following reasons:
+
+- Completed - e.g. change has been done, closed, fixed, or resolved
+- Not planned - e.g. decide not to make the change, can't reproduce the bug, change no longer required
+- Duplicate - this is a duplicate of another issue
+
+You may wish to add a comment to provide context of closing the issue.
+
+![](pics/issues-close.png)
+
+When closing as duplicate, it will prompt you to choose the issue that the issue your closing is a duplicate of. You may wish to close the newest duplicate, or the one with less information on the card, but it doesn't matter too much as the closed issue information can be found on the duplicate issue card which remained open
+
+![](pics/issues-duplicate.png)
+
+Closing an issue is essential as it shows that the issue is no longer outstanding. Closed issues will not appear by default on the "Issues" tab as this view is for open issues.
+
+::: callout-tip
+If closed, the content is not deleted, and the issue can be reopened later if required.
+:::
+
+An issue will automatically close if it had a pull request connected that was merged.
 
 ## Project Boards 
 
