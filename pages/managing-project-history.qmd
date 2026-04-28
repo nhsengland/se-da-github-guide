@@ -54,7 +54,7 @@ Situation: The team has a regular report showing performance for the 6 ICBs. We 
 3) merge the changes into main
 
 ![](pics/mph-example-1.png)
-Situation: A few weeks later, Jim changes his mind and decides we’re moving back to 6 ICBs. This is a great use case for a git revert. 
+Situation: A few weeks later, the decision to move to 4 ICBs is cancelled, so we're back to 6. This is a great use case for a git revert. 
 
 ![](pics/mph-example-2.png)
 
