@@ -22,6 +22,7 @@ website:
           - pages/qasar.qmd
           - pages/issues.qmd
           - pages/project-boards.qmd
+          - pages/managing-project-history.qmd
       - section: "Git in IDEs"
         contents:
           - pages/github-desktop.qmd
