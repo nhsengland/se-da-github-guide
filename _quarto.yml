@@ -15,6 +15,11 @@ website:
     style: "docked"
     search: true
     contents:
+      - section: "Principles"
+        contents:
+          - pages/team-principles.qmd
+          - pages/ways-of-working.qmd
+          - pages/understanding-code.qmd
       - section: "GitHub Guides"
         contents:
           - pages/first-repo.qmd
@@ -29,9 +34,6 @@ website:
           - pages/vs-code.qmd
           - pages/databricks-github.qmd
           - pages/fdp.qmd
-      - section: "Principles"
-        contents:
-          - pages/understanding-code.qmd
       - section: "Placeholder"
         contents:
           - pages/another-page.qmd
