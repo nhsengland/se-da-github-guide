@@ -764,7 +764,95 @@
     "section": "4. Our ways of working align with the wider NHS",
     "text": "4. Our ways of working align with the wider NHS\n\nWe follow best practice to ensure other NHSE teams understand our processes.\nWe share our code with other NHSE teams and collaborate using GitHub where possible.\nWe make repositories public where appropriate. *",
     "crumbs": [
-      "GitHub Guides",
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html",
+    "href": "pages/team-principles.html",
+    "title": "Team Principles",
+    "section": "",
+    "text": "Following these principles will enable better ways of working. It will be easier to find code you’re looking for, ensure you’re always using the latest version, make it easier to understand somebody else’s code, and more.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#summary",
+    "href": "pages/team-principles.html#summary",
+    "title": "Team Principles",
+    "section": "Summary",
+    "text": "Summary",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#we-use-github-as-the-main-source-for-all-code",
+    "href": "pages/team-principles.html#we-use-github-as-the-main-source-for-all-code",
+    "title": "Team Principles",
+    "section": "1. We use GitHub as the main source for all code",
+    "text": "1. We use GitHub as the main source for all code\n\nGitHub by default\n\nWe have one version of our code which is stored on GitHub. We do not save code in shared areas (e.g. SharePoint).\nWe create one repository per project.\nThe main branch on GitHub is the production version of our code (QA’d and ready to use).\n\nWe clone the GitHub repository to our personal areas rather than a shared area.\nAll code is available on GitHub; data, file paths, lakemart paths and outputs are hidden.\n\n\n\nMaking changes\n\nGitHub is the ‘organisational memory’ for all work.\nWe use branches for development work and create a new branch for each significant update.\nWe commit regularly and focus on committing small changes rather than large updates.\n\n\n\nQA & code reviews\n\nAll work completed on a branch is QA’d before merging into main.\nWe do regular code reviews to support team development.\nWe use ‘Issues’ to aid QA and to log ideas for future iterations.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#we-support-our-team-to-use-github",
+    "href": "pages/team-principles.html#we-support-our-team-to-use-github",
+    "title": "Team Principles",
+    "section": "2. We support our team to use GitHub",
+    "text": "2. We support our team to use GitHub\n\nLearning & development\n\nWe support each other to learn new things.\nWe ensure everyone can start using GitHub, with training that starts from the basics of using GitHub.\nWe offer training in small, logical steps towards an end goal.\nWe offer regular drop-ins and have dedicated GitHub Champions that can be approached for extra support.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#we-standardise-resources-across-the-team",
+    "href": "pages/team-principles.html#we-standardise-resources-across-the-team",
+    "title": "Team Principles",
+    "section": "3. We standardise resources across the team",
+    "text": "3. We standardise resources across the team\n\nStandardised repositories\n\nWe have a standard SE repository template used for all repositories, which includes and ReadMe template, a standard .gitignore and licenses.\nWe follow standardised naming conventions for all repositories.\n\n\n\nProcess standardisation\n\nWe have shared functions that are used across the team.\nWe have standardised processes, including commenting and QA’ing.\nWe have a standardised process for moving a repository from private to public.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#naming-conventions",
+    "href": "pages/team-principles.html#naming-conventions",
+    "title": "Team Principles",
+    "section": "Naming conventions",
+    "text": "Naming conventions\nFollowing these naming conventions for work by the South East D&A team will make it easy to identify repositories that are ours, and where they sit.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#where-to-clone-repositories",
+    "href": "pages/team-principles.html#where-to-clone-repositories",
+    "title": "Team Principles",
+    "section": "Where to Clone Repositories",
+    "text": "Where to Clone Repositories\nRepositories need to be cloned to personal areas. Cloning a repo creates a local copy of a remote repo and should only be for you to access.\n\nAcceptable Locations\n\nYour personal OneDrive\nYour user area within C: drive in UDAL e.g. C:.username\nYour Databricks personal workspace\n\n\n\nUnacceptable Locations\n\nSharePoint\nShared workspace in Databricks",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#project-structure",
+    "href": "pages/team-principles.html#project-structure",
+    "title": "Team Principles",
+    "section": "Project Structure",
+    "text": "Project Structure\nEach project/piece of analysis should have:\n\nGitHub Repository for code and SOP\nSharePoint folder for other project files i.e. no code\n\nTo make it clear where to find each of these:\n\nAdd a shortcut link to the GitHub Repo in the SharePoint folder (1). (If accessing SharePoint in the file explorer then use shortcut instead (2))\n\n\n\nWithin the GitHub repo README file, add the SharePoint folder path from “Analysis/” onwards. No links please (for security)!\n\n\nWhere to store reference data/lookups/config files needed to use the repository\n\nSharePoint\n\nA copy of the config file required for the code in the repo to run.\n\nA config file contains file paths to data and any other “secrets” e.g. details of the UDAL warehouse server name that are needed for the code to run but cannot be shared for data protection/information governance reasons.\n\n\nSE Analytics Lake Mart in UDAL\n\nReference data/lookups not available in the data lake/warehouse\nAny cuts of data specific to that project\n\n\n\n\nOutput of the repository\nOutputs should be stored on SharePoint once QA’d.",
+    "crumbs": [
+      "Principles",
       "Team Principles"
     ]
   }
