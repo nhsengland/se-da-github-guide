@@ -18,6 +18,7 @@ website:
       - section: "Principles"
         contents:
           - pages/team-principles.qmd
+          - pages/ways-of-working.qmd
           - pages/understanding-code.qmd
       - section: "GitHub Guides"
         contents:
