@@ -679,5 +679,93 @@
       "GitHub Guides",
       "Raising Issues"
     ]
+  },
+  {
+    "objectID": "pages/team-principles.html#github-by-default",
+    "href": "pages/team-principles.html#github-by-default",
+    "title": "Team Principles",
+    "section": "GitHub by default",
+    "text": "GitHub by default\n\nWe have one version of our code which is stored on GitHub. We do not save code in shared areas (e.g. SharePoint).\nWe create one repository per project.\nThe main branch on GitHub is the production version of our code (QA’d and ready to use).\n\nWe clone the GitHub repository to our personal areas rather than a shared area.\nAll code is available on GitHub; data, file paths, lakemart paths and outputs are hidden.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#making-changes",
+    "href": "pages/team-principles.html#making-changes",
+    "title": "Team Principles",
+    "section": "Making changes",
+    "text": "Making changes\n\nGitHub is the ‘organisational memory’ for all work.\nWe use branches for development work and create a new branch for each significant update.\nWe commit regularly and focus on committing small changes rather than large updates.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#qa-code-reviews",
+    "href": "pages/team-principles.html#qa-code-reviews",
+    "title": "Team Principles",
+    "section": "QA & code reviews",
+    "text": "QA & code reviews\n\nAll work completed on a branch is QA’d before merging into main.\nWe do regular code reviews to support team development.\nWe use ‘Issues’ to aid QA and to log ideas for future iterations.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#learning-development",
+    "href": "pages/team-principles.html#learning-development",
+    "title": "Team Principles",
+    "section": "Learning & development",
+    "text": "Learning & development\n\nWe support each other to learn new things.\nWe ensure everyone can start using GitHub, with training that starts from the basics of using GitHub.\nWe offer training in small, logical steps towards an end goal.\nWe offer regular drop-ins and have dedicated GitHub Champions that can be approached for extra support.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#team-documentation",
+    "href": "pages/team-principles.html#team-documentation",
+    "title": "Team Principles",
+    "section": "Team documentation",
+    "text": "Team documentation\n\nWe have clear and detailed guidance and documentation covering all elements of using GitHub.\nOur training resources are thorough and assume no prior knowledge of GitHub.\nWe have easy to understand guides for non-coding members.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#standardised-repositories",
+    "href": "pages/team-principles.html#standardised-repositories",
+    "title": "Team Principles",
+    "section": "Standardised repositories",
+    "text": "Standardised repositories\n\nWe have a standard SE repository template used for all repositories, which includes and ReadMe template, a standard .gitignore and licenses.\nWe follow standardised naming conventions for all repositories.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#process-standardisation",
+    "href": "pages/team-principles.html#process-standardisation",
+    "title": "Team Principles",
+    "section": "Process standardisation",
+    "text": "Process standardisation\n\nWe have shared functions that are used across the team.\nWe have standardised processes, including commenting and QA’ing.\nWe have a standardised process for moving a repository from private to public.",
+    "crumbs": [
+      "Principles",
+      "Team Principles"
+    ]
+  },
+  {
+    "objectID": "pages/team-principles.html#our-ways-of-working-align-with-the-wider-nhs",
+    "href": "pages/team-principles.html#our-ways-of-working-align-with-the-wider-nhs",
+    "title": "Team Principles",
+    "section": "4. Our ways of working align with the wider NHS",
+    "text": "4. Our ways of working align with the wider NHS\n\nWe follow best practice to ensure other NHSE teams understand our processes.\nWe share our code with other NHSE teams and collaborate using GitHub where possible.\nWe make repositories public where appropriate. *",
+    "crumbs": [
+      "GitHub Guides",
+      "Team Principles"
+    ]
   }
 ]
