@@ -10,11 +10,13 @@ As long as it's not sensitive, keeping all project history is a good idea as it 
 
 # Git Revert vs Git Reset
 
+There are two main options for undoing previous commits: Git Revert and Git Reset
+
 ## Git Revert
 
 Creates a new commit that reverses changes previously made and applies to the branch. You can see the changes that were made and then removed in the history. 
 
-**Soft option:** Reverts but leaves the changes in the history.
+Git revert is considered the **soft option** as it reverts the changes but leaves them in the history.
 
 A good option if you’re trying to roll back on a change that hasn’t worked to a previous, stable version of the code.
 
@@ -24,13 +26,11 @@ You should use Git Revert if:
 
 - You’re happy to retain all information in the history of the project.
  
-The phrase "rolling back changes" has been intentionally avoided here as you are not going back in time, but rather adding a new commit that is a reverse of what was done before. 
- 
 ## Git Reset
 
 Rolls back the branch to an earlier point and removes any commits made after that. 
 
-**Hard option:** Scrubs the history, as if it never happened…
+Git reset is considered the **hard option** as it scrubs the history, as if it never happened.
 
 This is the riskier option and therefore is much harder to do. We recommend reserving it only for when things have gone really (really) wrong. 
 
@@ -49,9 +49,9 @@ Ensuring you adhere to the Git Ignore guidance and training, you should never ne
 # Git Revert Practical Example
 
 Situation: The team has a regular report showing performance for the 6 ICBs. We want to update the report for 4 ICBs, so we:  
-1. commit the changes  
+1) Commit the changes  
 2) QA  
-3) merge the changes into main
+3) Merge the changes into main
 
 ![](pics/mph-example-1.png)
 Situation: A few weeks later, the decision to move to 4 ICBs is cancelled, so we're back to 6. This is a great use case for a git revert. 
@@ -60,7 +60,9 @@ Situation: A few weeks later, the decision to move to 4 ICBs is cancelled, so we
 
 # Git Revert on GitHub Desktop
 
-One can use other integrated development environments but be careful as key words are not always used the same way. GitHub Desktop is the most simple to understand and use.
+One can use other integrated development environments but be careful as key words are not always used the same way. E.g. In VSCode documentation, it talks about how to "revert or undo a git commit" but actually describes git reset.
+
+**GitHub Desktop** is the most simple to understand and use.
 
 ## When can I revert?
 
@@ -70,6 +72,7 @@ One can use other integrated development environments but be careful as key word
 ## How to revert
 
 - Open GitHub Desktop  
+- Create a new branch from main  
 - In the history tab, right‑click the commit you want to undo
 
 ![](pics/mph-how-to-revert-1.png)
@@ -86,7 +89,4 @@ One can use other integrated development environments but be careful as key word
 
 ![](pics/mph-how-to-revert-3.png)
 
-## Things to watch out for
-
-- Reverts can still cause conflicts  
-- The result may affect files you didn’t expect
+- Once you're happy with the revert, create a pull request. This is important as reverts can still cause conflicts, and the result may affect files you didn’t expect.
