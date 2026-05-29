@@ -6,7 +6,7 @@
     "section": "",
     "text": "Setting up Git in VSCode\nBefore we get started using Git in VSCode, for the first time only, it needs to be configured. Yes, it uses the Terminal window, but it’s not scary!\nThis can be done either by: - Open ‘Terminal’ from the search on your desktop taskbar - Open ‘Terminal’ in VSCode (‘View’ -&gt; ‘Terminal’)\nIn either one, type in the following: git config –global user.name “githubusername” &lt;- Enter your own GitHub username in the quotations, then hit enter git config –global user.email “email@nhs.net” &lt;- Enter your own email address associated with your GitHub account in the quotations, then hit enter\nThat’s it :star:\n\n\nInitialising a repository\nCreate the repo before you start coding Create the repo before you start coding Create the repo before you start coding\nThe best thing to do is to create the repo before (or as soon to the beginning as possible) starting writing your actual code. Think of it as this: you wouldn’t work on a big excel file without saving first, in case you lost it. The same applies here.\nThe way that Git works, you work on files saved in a local folder, then push to GitHub when you’re done (so you’re never working directly in GitHub). So, to start, you need to create a local blank folder for you to start with (or where you existing folder is). Recommendation is to create a ‘GitHub’ folder in your OneDrive, where the repo folders can sit.\nTo intisialise a repo, click the Source Control button on the left panel:\n\nClick ‘Open Folder’ and navigate to the repo folder (in your ‘OneDrive’ folder). Note: you may be asked whether you trust the authors of the files in the folder. Usually this is yes, as it’s from your own OneDrive.\nNow we’ve selected the folder, we can now initialise the repository:\n\nThis won’t yet appear on the GitHub web browser (as we haven’t published yet) - we will get to that.\n\n\nCloning a repository\nIf, instead of creating your own repo from scratch, you want to take something someone else has done for yourself, you can clone the repo. To do this, click ‘Clone Repository’ instead:\n\n(Note: if you’re already working on a repo, you can clear what you’re working on by opening a new window (File -&gt; New window) or by closing the current folder (File -&gt; Close folder)).\nIn the top bar, click ‘Clone from GitHub’ and start typing for the repo you want.\n\nSave to your ‘OneDrive’ folder. You can now work on the files.\n\n\nBranching\nNow, the whole point of GitHub is to work collaboratively, so there will be times where you want to clone someone’s repo and make your own additions. This is also best practice for your own repos: when adding a new development, create a new branch. Never work in ‘main’.\nThis is where branches come in.\nOnce you’ve cloned a repo, ensure you are in your Source Control view and click the ‘.’ as shown below.\n\nAnd enter the desired branch name (e.g. ‘dev’)\n\nSwitching branches: you can switch branches within VSCode in the bottom left of the screen:\n\nIn your branch, you can work on you script, add and delete files etc. If you want, it can be merged to the ‘main’ branch, which we will again get to.\n\n\nTracking and staging\nOnce you’ve done the above, you can now make changes to the repository. This could be: - Changing an existing file (e.g. adding new lines of code) - Adding new files (including codefiles) into the repo - Removing files from the repo (be careful of dependencies!)\nThis is where the real power of GitHub comes in - tracking changes without losing what you’ve already done.\nFirst, another best practice to remember: COMMIT OFTEN, PERFECT LATER, PUBLISH ONCE\nIf you commit smaller changes it’s far easier to go back if you’ve made a mistake and saves more work down the line. Again, think of it as saving an excel workbook.\nThe how to bit: Once you’ve changed something, navigate to the Source Control tab again. You’ll see a ‘changes’ section in the source control, as below.\n\n\nCommit\nIncluding a bit on the Git Log\n\n\nGit restore\n\n\nMerge\n\n\nMerge conflicts\n\n\nGit Log\n\n\ndiff\n\n\nRoll back\n\n\nGit revert\n\n\nPublishing an existing repo\n\n\nPush and pull\n\n\nForking and cloning\n\n\nPull requests\n\n\nIssues",
     "crumbs": [
-      "GitHub Guides",
+      "Git in IDEs",
       "GitHub in VS Code"
     ]
   },
@@ -182,7 +182,7 @@
     "section": "",
     "text": "For those that want do more version control and collaboration, GitHub desktop is a good place to start.\n\n\nFirst step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for GitHub. You want to download the app with the purple cat.\n\nYou will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).\nIf you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.\n\n\n\n\n\n\nEven though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see here for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.\n\n\n\n\n\n\nSetting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.\n\n\n\nThis file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the R gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.\n\n\n\nFiles can be added to the gitignore manually by right clicking on a file in the Changes section of GitHub desktop, and clicking Ignore file. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g. .csv files)\n\n\n\nYou can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.\nAlternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.\n\n\n\n\nIndividual files: you can ignore individual files by typing the filename\nWhole filetypes: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g. *.xlsx\nFolders and subfolders: if you don’t want a whole folder included, you can just name the folder path e.g. /data\n\n\n\n\n\nUntil you click Publish repository, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.\nYou should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.\nAny changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop changes section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click Commit to main.\n\n\n\n\n\n\nTip\n\n\n\nA green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.\n\n\n\nYou can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately\n\n\n\nIf you need to review or revisit any prior commits, you can see these in the History tab.\n\n\n\n\n\nAll that’s left to do is share your repo to github. This is as easy as clicking the Publish repository button.\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!\n\n\nYou can also pull any changes from github down to your local machine by clicking Pull origin in the top bar\n\n\n\nAs well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:\n\nFrom the browser\nFrom the desktop app\n\n\n\nThis is really easy. Navigate to the repo you want to work on. Click the green &lt;&gt; Code button, and then Open with GitHub Desktop. Easy.\n\n\n\n\nThis is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -193,7 +193,7 @@
     "section": "",
     "text": "First step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for GitHub. You want to download the app with the purple cat.\n\nYou will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).\nIf you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -204,7 +204,7 @@
     "section": "",
     "text": "Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see here for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.\n\n\n\n\n\n\nSetting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.\n\n\n\nThis file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the R gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.\n\n\n\nFiles can be added to the gitignore manually by right clicking on a file in the Changes section of GitHub desktop, and clicking Ignore file. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g. .csv files)\n\n\n\nYou can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.\nAlternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.\n\n\n\n\nIndividual files: you can ignore individual files by typing the filename\nWhole filetypes: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g. *.xlsx\nFolders and subfolders: if you don’t want a whole folder included, you can just name the folder path e.g. /data\n\n\n\n\n\nUntil you click Publish repository, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.\nYou should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.\nAny changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop changes section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click Commit to main.\n\n\n\n\n\n\nTip\n\n\n\nA green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.\n\n\n\nYou can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately\n\n\n\nIf you need to review or revisit any prior commits, you can see these in the History tab.",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -215,7 +215,7 @@
     "section": "",
     "text": "All that’s left to do is share your repo to github. This is as easy as clicking the Publish repository button.\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!\n\n\nYou can also pull any changes from github down to your local machine by clicking Pull origin in the top bar",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -226,7 +226,7 @@
     "section": "",
     "text": "As well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:\n\nFrom the browser\nFrom the desktop app\n\n\n\nThis is really easy. Navigate to the repo you want to work on. Click the green &lt;&gt; Code button, and then Open with GitHub Desktop. Easy.\n\n\n\n\nThis is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -678,6 +678,94 @@
     "crumbs": [
       "GitHub Guides",
       "Raising Issues"
+    ]
+  },
+  {
+    "objectID": "pages/managing-project-history.html#git-revert",
+    "href": "pages/managing-project-history.html#git-revert",
+    "title": "Managing Project History",
+    "section": "Git Revert",
+    "text": "Git Revert\nCreates a new commit that reverses changes previously made and applies to the branch. You can see the changes that were made and then removed in the history.\nGit revert is considered the soft option as it reverts the changes but leaves them in the history.\nA good option if you’re trying to roll back on a change that hasn’t worked to a previous, stable version of the code.\nYou should use Git Revert if:\n\nIf you want to undo an immediate change (e.g., the introduction of a bug or mistake) or revisit an older version of the project.\nYou’re happy to retain all information in the history of the project.",
+    "crumbs": [
+      "GitHub Guides",
+      "Managing Project History"
+    ]
+  },
+  {
+    "objectID": "pages/managing-project-history.html#git-reset",
+    "href": "pages/managing-project-history.html#git-reset",
+    "title": "Managing Project History",
+    "section": "Git Reset",
+    "text": "Git Reset\nRolls back the branch to an earlier point and removes any commits made after that.\nGit reset is considered the hard option as it scrubs the history, as if it never happened.\nThis is the riskier option and therefore is much harder to do. We recommend reserving it only for when things have gone really (really) wrong.\nYou should use Git Reset if:\n\nYou accidentally committed sensitive information which should be in the GitIgnore (e.g., sensitive data, personal login information, passwords, secrets etc).\nYou need all the information to be scrubbed from the repository completely.",
+    "crumbs": [
+      "GitHub Guides",
+      "Managing Project History"
+    ]
+  },
+  {
+    "objectID": "pages/managing-project-history.html#which-one-to-use",
+    "href": "pages/managing-project-history.html#which-one-to-use",
+    "title": "Managing Project History",
+    "section": "Which one to use",
+    "text": "Which one to use\nBecause Git Reset is the more complex and higher‑risk option, this guidance will focus solely on Git Revert.\nEnsuring you adhere to the Git Ignore guidance and training, you should never need to use Git Reset, but mistakes can happen. See the GitHub Basics Concepts tab for more info",
+    "crumbs": [
+      "GitHub Guides",
+      "Managing Project History"
+    ]
+  },
+  {
+    "objectID": "pages/managing-project-history.html#when-can-i-revert",
+    "href": "pages/managing-project-history.html#when-can-i-revert",
+    "title": "Managing Project History",
+    "section": "When can I revert?",
+    "text": "When can I revert?\n\nThe commit can be pushed or not pushed\n\nWorks on individual commits or multiple commits",
+    "crumbs": [
+      "GitHub Guides",
+      "Managing Project History"
+    ]
+  },
+  {
+    "objectID": "pages/managing-project-history.html#how-to-revert",
+    "href": "pages/managing-project-history.html#how-to-revert",
+    "title": "Managing Project History",
+    "section": "How to revert",
+    "text": "How to revert\n\nOpen GitHub Desktop\n\nCreate a new branch from main\n\nIn the history tab, right‑click the commit you want to undo\n\n\n\nSelect Revert changes in commit",
+    "crumbs": [
+      "GitHub Guides",
+      "Managing Project History"
+    ]
+  },
+  {
+    "objectID": "pages/managing-project-history.html#what-happens-next",
+    "href": "pages/managing-project-history.html#what-happens-next",
+    "title": "Managing Project History",
+    "section": "What happens next",
+    "text": "What happens next\n\nGitHub Desktop creates a new commit that reverses the selected changes\n\nThe original commits remain visible in history\n\nYou can review and push the revert like any other commit\n\n\n\nOnce you’re happy with the revert, create a pull request. This is important as reverts can still cause conflicts, and the result may affect files you didn’t expect.",
+    "crumbs": [
+      "GitHub Guides",
+      "Managing Project History"
+    ]
+  },
+  {
+    "objectID": "pages/managing-project-history.html#things-to-watch-out-for",
+    "href": "pages/managing-project-history.html#things-to-watch-out-for",
+    "title": "Managing Project History",
+    "section": "Things to watch out for",
+    "text": "Things to watch out for\n\nReverts can still cause conflicts\n\nThe result may affect files you didn’t expect",
+    "crumbs": [
+      "GitHub Guides",
+      "Managing Project History"
+    ]
+  },
+  {
+    "objectID": "pages/managing-project-history.html",
+    "href": "pages/managing-project-history.html",
+    "title": "Managing Project History",
+    "section": "",
+    "text": "Git records every change made on a repository as a list of commits. This page will focus on when you have made a commit (could be 30 seconds ago, or 3 weeks ago), and decide that you don’t want those changes.\nAs long as it’s not sensitive, keeping all project history is a good idea as it preserves the progress of the repository and means if you change your mind in the future, all the history is still there.",
+    "crumbs": [
+      "GitHub Guides",
+      "Managing Project History"
     ]
   }
 ]

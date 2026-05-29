@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nhsengland.github.io/se-da-github-guide/pages/vs-code.html</loc>
-    <lastmod>2026-01-14T09:02:45.222Z</lastmod>
+    <lastmod>2025-11-21T11:16:20.000Z</lastmod>
   </url>
   <url>
     <loc>https://nhsengland.github.io/se-da-github-guide/pages/understanding-code.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://nhsengland.github.io/se-da-github-guide/pages/github-desktop.html</loc>
-    <lastmod>2025-11-21T11:15:51.127Z</lastmod>
+    <lastmod>2025-11-21T11:15:51.000Z</lastmod>
   </url>
   <url>
     <loc>https://nhsengland.github.io/se-da-github-guide/pages/fdp.html</loc>
@@ -50,10 +50,14 @@
   </url>
   <url>
     <loc>https://nhsengland.github.io/se-da-github-guide/pages/project-boards.html</loc>
-    <lastmod>2026-04-09T12:43:55.855Z</lastmod>
+    <lastmod>2026-04-09T12:48:06.057Z</lastmod>
   </url>
   <url>
     <loc>https://nhsengland.github.io/se-da-github-guide/pages/issues.html</loc>
     <lastmod>2026-04-09T12:26:21.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsengland.github.io/se-da-github-guide/pages/managing-project-history.html</loc>
+    <lastmod>2026-05-28T13:59:04.982Z</lastmod>
   </url>
 </urlset>
