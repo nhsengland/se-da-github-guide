@@ -94,7 +94,8 @@ If you have created your repo in the organisational area, you might want to move
 
 ![](pics/south-east-team.PNG)
 
-4.  Choose what role you want your team members to have
+4.  Choose what role you want your team members to have. **For SE D&A team, please grant admin role** so other team members can manage the repo when required.
+
 
 ![](pics/role-select.PNG)
 

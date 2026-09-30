@@ -6,7 +6,7 @@
     "section": "",
     "text": "Setting up Git in VSCode\nBefore we get started using Git in VSCode, for the first time only, it needs to be configured. Yes, it uses the Terminal window, but it’s not scary!\nThis can be done either by: - Open ‘Terminal’ from the search on your desktop taskbar - Open ‘Terminal’ in VSCode (‘View’ -&gt; ‘Terminal’)\nIn either one, type in the following: git config –global user.name “githubusername” &lt;- Enter your own GitHub username in the quotations, then hit enter git config –global user.email “email@nhs.net” &lt;- Enter your own email address associated with your GitHub account in the quotations, then hit enter\nThat’s it :star:\n\n\nInitialising a repository\nCreate the repo before you start coding Create the repo before you start coding Create the repo before you start coding\nThe best thing to do is to create the repo before (or as soon to the beginning as possible) starting writing your actual code. Think of it as this: you wouldn’t work on a big excel file without saving first, in case you lost it. The same applies here.\nThe way that Git works, you work on files saved in a local folder, then push to GitHub when you’re done (so you’re never working directly in GitHub). So, to start, you need to create a local blank folder for you to start with (or where you existing folder is). Recommendation is to create a ‘GitHub’ folder in your OneDrive, where the repo folders can sit.\nTo intisialise a repo, click the Source Control button on the left panel:\n\nClick ‘Open Folder’ and navigate to the repo folder (in your ‘OneDrive’ folder). Note: you may be asked whether you trust the authors of the files in the folder. Usually this is yes, as it’s from your own OneDrive.\nNow we’ve selected the folder, we can now initialise the repository:\n\nThis won’t yet appear on the GitHub web browser (as we haven’t published yet) - we will get to that.\n\n\nCloning a repository\nIf, instead of creating your own repo from scratch, you want to take something someone else has done for yourself, you can clone the repo. To do this, click ‘Clone Repository’ instead:\n\n(Note: if you’re already working on a repo, you can clear what you’re working on by opening a new window (File -&gt; New window) or by closing the current folder (File -&gt; Close folder)).\nIn the top bar, click ‘Clone from GitHub’ and start typing for the repo you want.\n\nSave to your ‘OneDrive’ folder. You can now work on the files.\n\n\nBranching\nNow, the whole point of GitHub is to work collaboratively, so there will be times where you want to clone someone’s repo and make your own additions. This is also best practice for your own repos: when adding a new development, create a new branch. Never work in ‘main’.\nThis is where branches come in.\nOnce you’ve cloned a repo, ensure you are in your Source Control view and click the ‘.’ as shown below.\n\nAnd enter the desired branch name (e.g. ‘dev’)\n\nSwitching branches: you can switch branches within VSCode in the bottom left of the screen:\n\nIn your branch, you can work on you script, add and delete files etc. If you want, it can be merged to the ‘main’ branch, which we will again get to.\n\n\nTracking and staging\nOnce you’ve done the above, you can now make changes to the repository. This could be: - Changing an existing file (e.g. adding new lines of code) - Adding new files (including codefiles) into the repo - Removing files from the repo (be careful of dependencies!)\nThis is where the real power of GitHub comes in - tracking changes without losing what you’ve already done.\nFirst, another best practice to remember: COMMIT OFTEN, PERFECT LATER, PUBLISH ONCE\nIf you commit smaller changes it’s far easier to go back if you’ve made a mistake and saves more work down the line. Again, think of it as saving an excel workbook.\nThe how to bit: Once you’ve changed something, navigate to the Source Control tab again. You’ll see a ‘changes’ section in the source control, as below.\n\n\nCommit\nIncluding a bit on the Git Log\n\n\nGit restore\n\n\nMerge\n\n\nMerge conflicts\n\n\nGit Log\n\n\ndiff\n\n\nRoll back\n\n\nGit revert\n\n\nPublishing an existing repo\n\n\nPush and pull\n\n\nForking and cloning\n\n\nPull requests\n\n\nIssues",
     "crumbs": [
-      "GitHub Guides",
+      "Git in IDEs",
       "GitHub in VS Code"
     ]
   },
@@ -182,7 +182,7 @@
     "section": "",
     "text": "For those that want do more version control and collaboration, GitHub desktop is a good place to start.\n\n\nFirst step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for GitHub. You want to download the app with the purple cat.\n\nYou will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).\nIf you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.\n\n\n\n\n\n\nEven though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see here for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.\n\n\n\n\n\n\nSetting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.\n\n\n\nThis file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the R gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.\n\n\n\nFiles can be added to the gitignore manually by right clicking on a file in the Changes section of GitHub desktop, and clicking Ignore file. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g. .csv files)\n\n\n\nYou can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.\nAlternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.\n\n\n\n\nIndividual files: you can ignore individual files by typing the filename\nWhole filetypes: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g. *.xlsx\nFolders and subfolders: if you don’t want a whole folder included, you can just name the folder path e.g. /data\n\n\n\n\n\nUntil you click Publish repository, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.\nYou should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.\nAny changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop changes section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click Commit to main.\n\n\n\n\n\n\nTip\n\n\n\nA green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.\n\n\n\nYou can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately\n\n\n\nIf you need to review or revisit any prior commits, you can see these in the History tab.\n\n\n\n\n\nAll that’s left to do is share your repo to github. This is as easy as clicking the Publish repository button.\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!\n\n\nYou can also pull any changes from github down to your local machine by clicking Pull origin in the top bar\n\n\n\nAs well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:\n\nFrom the browser\nFrom the desktop app\n\n\n\nThis is really easy. Navigate to the repo you want to work on. Click the green &lt;&gt; Code button, and then Open with GitHub Desktop. Easy.\n\n\n\n\nThis is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -193,7 +193,7 @@
     "section": "",
     "text": "First step is to download GitHub Desktop from the company portal. If you open the company portal, you can search for GitHub. You want to download the app with the purple cat.\n\nYou will then need to open it up and you should be prompted to pop in your github username (you may need to validate this in the browser version- I can’t remember).\nIf you ever need to change your associated github account, you can navigate File &gt; Options, and switch account in there.",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -204,7 +204,7 @@
     "section": "",
     "text": "Even though it looks a little different, a lot of the process to create a repo in GitHub Desktop is similar to that of creating a repo in the browser, see here for a reminder. The main difference is that your repo will live locally until you choose to publish to GitHub, so no need to choose where it lives or privacy settings. You will, however need to choose which local file to put the repo folder- this will be where you save all your code.\n\n\n\n\n\n\nSetting up a gitignore file is a bit more important when working from GitHub desktop than when simply uploading files to the browser version. By default, all the files in the repo folder will be included in the repo. However, there are likely to be some files or information that you don’t want to share. For example, this could be data or sensitive connection strings. The gitignore file tells the repo which files not to look at.\n\n\n\nThis file can be set up when you create the repo by selecting a specific gitignore template. This will ignore a determined list of filetypes which are commonly associated with the option you select. For example, if you select the R gitignore template, the file will include all R History, R Data, R User Data, etc. It can be a good starting point if you don’t know where to start.\n\n\n\nFiles can be added to the gitignore manually by right clicking on a file in the Changes section of GitHub desktop, and clicking Ignore file. You can choose whether to add the individual file or all files of the same filetype (this might be useful if you want to blanket ignore e.g. .csv files)\n\n\n\nYou can change your gitignore file as you go along by opening it as a text file, making your changes, and saving them. You can then commit changes to your gitignore file in the same way as you commit changes to any other file in the repo so that they are tracked.\nAlternatively, you can update the gitignore by navigating to Repository &gt; Repository settings &gt; Ignored files and make changes there.\n\n\n\n\nIndividual files: you can ignore individual files by typing the filename\nWhole filetypes: if you want to ignore all of a particular filetype just prefix the filetype with an asterisk e.g. *.xlsx\nFolders and subfolders: if you don’t want a whole folder included, you can just name the folder path e.g. /data\n\n\n\n\n\nUntil you click Publish repository, everything you create will live locally. This means that you can make changes to your files and code and play about endlessly until you’re happy to share more widely. It’s still a good idea to manage and commit changes.\nYou should now be able to create your projects and files within the repo folder (which lives wherever you decided when you set up the repo). You are then free to code / change files as you would normally within whichever programmes you use. All your saved changes will be tracked.\nAny changes you save in any files in this folder (that aren’t ignored) will appear in the GitHub desktop changes section. You can see which file has changed, what has been removed (red), and what has been added (green). If you like the changes, ensure that the tick box is checked on the left of the file name, name your commit and add a description (optional), and click Commit to main.\n\n\n\n\n\n\nTip\n\n\n\nA green square on the right of the file indicates a completely new file, orange indicates changes to an existing file, red indicates a deleted file.\n\n\n\nYou can make changes to multiple files in a single commit or commit them separately if you are likely to want to revisit multiple changes separately\n\n\n\nIf you need to review or revisit any prior commits, you can see these in the History tab.",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -215,7 +215,7 @@
     "section": "",
     "text": "All that’s left to do is share your repo to github. This is as easy as clicking the Publish repository button.\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to select the organisation if you want to share with colleagues. If you publish to your private area, you can transfer to the organisation but you will lose admin rights so won’t be able to make changes or move to the South East area!\n\n\nYou can also pull any changes from github down to your local machine by clicking Pull origin in the top bar",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -226,7 +226,7 @@
     "section": "",
     "text": "As well as creating your own repos, it may be that you want to open someone else’s that you’ve seen on GitHub. There are 2 easy ways to do this:\n\nFrom the browser\nFrom the desktop app\n\n\n\nThis is really easy. Navigate to the repo you want to work on. Click the green &lt;&gt; Code button, and then Open with GitHub Desktop. Easy.\n\n\n\n\nThis is almost as easy. Within GitHub desktop, navigate to File &gt; Clone Repository and paste in either the URL of the repo in question, or type in the github username and repo name. The only other thing you need to do is tell GitHub desktop where you want the repo folder to live on your machine.",
     "crumbs": [
-      "GitHub in other IDEs",
+      "Git in IDEs",
       "Using GitHub Desktop"
     ]
   },
@@ -367,7 +367,7 @@
     "href": "pages/first-repo.html#move-the-repo-to-the-team-area",
     "title": "Publishing Your First Repo",
     "section": "Move the repo to the team area",
-    "text": "Move the repo to the team area\nIf you have created your repo in the organisational area, you might want to move it to live in the South East area. This is very simple.\n\nNavigate to the repo and click the Settings button\n\n\n\nWithin the Access section, click Collaborators and teams (top left), and click Add teams\n\n\n\nFinally search for and select South East D&A\n\n\n\nChoose what role you want your team members to have\n\n\nYour repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you’ve allowed them to!\n\n\n\n\n\n\nTip\n\n\n\nPlease also add the nhsengland everyone team to the repo and give them read access so that everyone in the organisation can see your code.",
+    "text": "Move the repo to the team area\nIf you have created your repo in the organisational area, you might want to move it to live in the South East area. This is very simple.\n\nNavigate to the repo and click the Settings button\n\n\n\nWithin the Access section, click Collaborators and teams (top left), and click Add teams\n\n\n\nFinally search for and select South East D&A\n\n\n\nChoose what role you want your team members to have. For SE D&A team, please grant admin role so other team members can manage the repo when required.\n\n\nYour repo now lives in the South East D&A section of the organisation. This should make it easier to find and will allow your team colleagues to make changes if you’ve allowed them to!\n\n\n\n\n\n\nTip\n\n\n\nPlease also add the nhsengland everyone team to the repo and give them read access so that everyone in the organisation can see your code.",
     "crumbs": [
       "GitHub Guides",
       "Publishing Your First Repo"
@@ -681,234 +681,91 @@
     ]
   },
   {
-    "objectID": "pages/team-principles.html#github-by-default",
-    "href": "pages/team-principles.html#github-by-default",
-    "title": "Team Principles",
-    "section": "GitHub by default",
-    "text": "GitHub by default\n\nWe have one version of our code which is stored on GitHub. We do not save code in shared areas (e.g. SharePoint).\nWe create one repository per project.\nThe main branch on GitHub is the production version of our code (QA’d and ready to use).\n\nWe clone the GitHub repository to our personal areas rather than a shared area.\nAll code is available on GitHub; data, file paths, lakemart paths and outputs are hidden.",
+    "objectID": "pages/managing-project-history.html#git-revert",
+    "href": "pages/managing-project-history.html#git-revert",
+    "title": "Managing Project History",
+    "section": "Git Revert",
+    "text": "Git Revert\nCreates a new commit that reverses changes previously made and applies to the branch. You can see the changes that were made and then removed in the history.\nGit revert is considered the soft option as it reverts the changes but leaves them in the history.\nA good option if you’re trying to roll back on a change that hasn’t worked to a previous, stable version of the code.\nYou should use Git Revert if:\n\nIf you want to undo an immediate change (e.g., the introduction of a bug or mistake) or revisit an older version of the project.\nYou’re happy to retain all information in the history of the project.",
     "crumbs": [
-      "Principles",
-      "Team Principles"
+      "GitHub Guides",
+      "Managing Project History"
     ]
   },
   {
-    "objectID": "pages/team-principles.html#making-changes",
-    "href": "pages/team-principles.html#making-changes",
-    "title": "Team Principles",
-    "section": "Making changes",
-    "text": "Making changes\n\nGitHub is the ‘organisational memory’ for all work.\nWe use branches for development work and create a new branch for each significant update.\nWe commit regularly and focus on committing small changes rather than large updates.",
+    "objectID": "pages/managing-project-history.html#git-reset",
+    "href": "pages/managing-project-history.html#git-reset",
+    "title": "Managing Project History",
+    "section": "Git Reset",
+    "text": "Git Reset\nRolls back the branch to an earlier point and removes any commits made after that.\nGit reset is considered the hard option as it scrubs the history, as if it never happened.\nThis is the riskier option and therefore is much harder to do. We recommend reserving it only for when things have gone really (really) wrong.\nYou should use Git Reset if:\n\nYou accidentally committed sensitive information which should be in the GitIgnore (e.g., sensitive data, personal login information, passwords, secrets etc).\nYou need all the information to be scrubbed from the repository completely.",
     "crumbs": [
-      "Principles",
-      "Team Principles"
+      "GitHub Guides",
+      "Managing Project History"
     ]
   },
   {
-    "objectID": "pages/team-principles.html#qa-code-reviews",
-    "href": "pages/team-principles.html#qa-code-reviews",
-    "title": "Team Principles",
-    "section": "QA & code reviews",
-    "text": "QA & code reviews\n\nAll work completed on a branch is QA’d before merging into main.\nWe do regular code reviews to support team development.\nWe use ‘Issues’ to aid QA and to log ideas for future iterations.",
+    "objectID": "pages/managing-project-history.html#which-one-to-use",
+    "href": "pages/managing-project-history.html#which-one-to-use",
+    "title": "Managing Project History",
+    "section": "Which one to use",
+    "text": "Which one to use\nBecause Git Reset is the more complex and higher‑risk option, this guidance will focus solely on Git Revert.\nEnsuring you adhere to the Git Ignore guidance and training, you should never need to use Git Reset, but mistakes can happen. See the GitHub Basics Concepts tab for more info",
     "crumbs": [
-      "Principles",
-      "Team Principles"
+      "GitHub Guides",
+      "Managing Project History"
     ]
   },
   {
-    "objectID": "pages/team-principles.html#learning-development",
-    "href": "pages/team-principles.html#learning-development",
-    "title": "Team Principles",
-    "section": "Learning & development",
-    "text": "Learning & development\n\nWe support each other to learn new things.\nWe ensure everyone can start using GitHub, with training that starts from the basics of using GitHub.\nWe offer training in small, logical steps towards an end goal.\nWe offer regular drop-ins and have dedicated GitHub Champions that can be approached for extra support.",
+    "objectID": "pages/managing-project-history.html#when-can-i-revert",
+    "href": "pages/managing-project-history.html#when-can-i-revert",
+    "title": "Managing Project History",
+    "section": "When can I revert?",
+    "text": "When can I revert?\n\nThe commit can be pushed or not pushed\n\nWorks on individual commits or multiple commits",
     "crumbs": [
-      "Principles",
-      "Team Principles"
+      "GitHub Guides",
+      "Managing Project History"
     ]
   },
   {
-    "objectID": "pages/team-principles.html#team-documentation",
-    "href": "pages/team-principles.html#team-documentation",
-    "title": "Team Principles",
-    "section": "Team documentation",
-    "text": "Team documentation\n\nWe have clear and detailed guidance and documentation covering all elements of using GitHub.\nOur training resources are thorough and assume no prior knowledge of GitHub.\nWe have easy to understand guides for non-coding members.",
+    "objectID": "pages/managing-project-history.html#how-to-revert",
+    "href": "pages/managing-project-history.html#how-to-revert",
+    "title": "Managing Project History",
+    "section": "How to revert",
+    "text": "How to revert\n\nOpen GitHub Desktop\n\nCreate a new branch from main\n\nIn the history tab, right‑click the commit you want to undo\n\n\n\nSelect Revert changes in commit",
     "crumbs": [
-      "Principles",
-      "Team Principles"
+      "GitHub Guides",
+      "Managing Project History"
     ]
   },
   {
-    "objectID": "pages/team-principles.html#standardised-repositories",
-    "href": "pages/team-principles.html#standardised-repositories",
-    "title": "Team Principles",
-    "section": "Standardised repositories",
-    "text": "Standardised repositories\n\nWe have a standard SE repository template used for all repositories, which includes and ReadMe template, a standard .gitignore and licenses.\nWe follow standardised naming conventions for all repositories.",
+    "objectID": "pages/managing-project-history.html#what-happens-next",
+    "href": "pages/managing-project-history.html#what-happens-next",
+    "title": "Managing Project History",
+    "section": "What happens next",
+    "text": "What happens next\n\nGitHub Desktop creates a new commit that reverses the selected changes\n\nThe original commits remain visible in history\n\nYou can review and push the revert like any other commit\n\n\n\nOnce you’re happy with the revert, create a pull request. This is important as reverts can still cause conflicts, and the result may affect files you didn’t expect.",
     "crumbs": [
-      "Principles",
-      "Team Principles"
+      "GitHub Guides",
+      "Managing Project History"
     ]
   },
   {
-    "objectID": "pages/team-principles.html#process-standardisation",
-    "href": "pages/team-principles.html#process-standardisation",
-    "title": "Team Principles",
-    "section": "Process standardisation",
-    "text": "Process standardisation\n\nWe have shared functions that are used across the team.\nWe have standardised processes, including commenting and QA’ing.\nWe have a standardised process for moving a repository from private to public.",
+    "objectID": "pages/managing-project-history.html#things-to-watch-out-for",
+    "href": "pages/managing-project-history.html#things-to-watch-out-for",
+    "title": "Managing Project History",
+    "section": "Things to watch out for",
+    "text": "Things to watch out for\n\nReverts can still cause conflicts\n\nThe result may affect files you didn’t expect",
     "crumbs": [
-      "Principles",
-      "Team Principles"
+      "GitHub Guides",
+      "Managing Project History"
     ]
   },
   {
-    "objectID": "pages/team-principles.html#our-ways-of-working-align-with-the-wider-nhs",
-    "href": "pages/team-principles.html#our-ways-of-working-align-with-the-wider-nhs",
-    "title": "Team Principles",
-    "section": "4. Our ways of working align with the wider NHS",
-    "text": "4. Our ways of working align with the wider NHS\n\nWe follow best practice to ensure other NHSE teams understand our processes.\nWe share our code with other NHSE teams and collaborate using GitHub where possible.\nWe make repositories public where appropriate. *",
-    "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/team-principles.html",
-    "href": "pages/team-principles.html",
-    "title": "Team Principles",
+    "objectID": "pages/managing-project-history.html",
+    "href": "pages/managing-project-history.html",
+    "title": "Managing Project History",
     "section": "",
-    "text": "Following these principles will enable better ways of working. It will be easier to find code you’re looking for, ensure you’re always using the latest version, make it easier to understand somebody else’s code, and more.",
+    "text": "Git records every change made on a repository as a list of commits. This page will focus on when you have made a commit (could be 30 seconds ago, or 3 weeks ago), and decide that you don’t want those changes.\nAs long as it’s not sensitive, keeping all project history is a good idea as it preserves the progress of the repository and means if you change your mind in the future, all the history is still there.",
     "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/team-principles.html#summary",
-    "href": "pages/team-principles.html#summary",
-    "title": "Team Principles",
-    "section": "Summary",
-    "text": "Summary",
-    "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/team-principles.html#we-use-github-as-the-main-source-for-all-code",
-    "href": "pages/team-principles.html#we-use-github-as-the-main-source-for-all-code",
-    "title": "Team Principles",
-    "section": "1. We use GitHub as the main source for all code",
-    "text": "1. We use GitHub as the main source for all code\n\nGitHub by default\n\nWe have one version of our code which is stored on GitHub. We do not save code in shared areas (e.g. SharePoint).\nWe create one repository per project.\nThe main branch on GitHub is the production version of our code (QA’d and ready to use).\n\nWe clone the GitHub repository to our personal areas rather than a shared area.\nAll code is available on GitHub; data, file paths, lakemart paths and outputs are hidden.\n\n\n\nMaking changes\n\nGitHub is the ‘organisational memory’ for all work.\nWe use branches for development work and create a new branch for each significant update.\nWe commit regularly and focus on committing small changes rather than large updates.\n\n\n\nQA & code reviews\n\nAll work completed on a branch is QA’d before merging into main.\nWe do regular code reviews to support team development.\nWe use ‘Issues’ to aid QA and to log ideas for future iterations.",
-    "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/team-principles.html#we-support-our-team-to-use-github",
-    "href": "pages/team-principles.html#we-support-our-team-to-use-github",
-    "title": "Team Principles",
-    "section": "2. We support our team to use GitHub",
-    "text": "2. We support our team to use GitHub\n\nLearning & development\n\nWe support each other to learn new things.\nWe ensure everyone can start using GitHub, with training that starts from the basics of using GitHub.\nWe offer training in small, logical steps towards an end goal.\nWe offer regular drop-ins and have dedicated GitHub Champions that can be approached for extra support.",
-    "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/team-principles.html#we-standardise-resources-across-the-team",
-    "href": "pages/team-principles.html#we-standardise-resources-across-the-team",
-    "title": "Team Principles",
-    "section": "3. We standardise resources across the team",
-    "text": "3. We standardise resources across the team\n\nStandardised repositories\n\nWe have a standard SE repository template used for all repositories, which includes and ReadMe template, a standard .gitignore and licenses.\nWe follow standardised naming conventions for all repositories.\n\n\n\nProcess standardisation\n\nWe have shared functions that are used across the team.\nWe have standardised processes, including commenting and QA’ing.\nWe have a standardised process for moving a repository from private to public.",
-    "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/team-principles.html#naming-conventions",
-    "href": "pages/team-principles.html#naming-conventions",
-    "title": "Team Principles",
-    "section": "Naming conventions",
-    "text": "Naming conventions\nFollowing these naming conventions for work by the South East D&A team will make it easy to identify repositories that are ours, and where they sit.",
-    "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/team-principles.html#where-to-clone-repositories",
-    "href": "pages/team-principles.html#where-to-clone-repositories",
-    "title": "Team Principles",
-    "section": "Where to Clone Repositories",
-    "text": "Where to Clone Repositories\nRepositories need to be cloned to personal areas. Cloning a repo creates a local copy of a remote repo and should only be for you to access.\n\nAcceptable Locations\n\nYour personal OneDrive\nYour user area within C: drive in UDAL e.g. C:.username\nYour Databricks personal workspace\n\n\n\nUnacceptable Locations\n\nSharePoint\nShared workspace in Databricks",
-    "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/team-principles.html#project-structure",
-    "href": "pages/team-principles.html#project-structure",
-    "title": "Team Principles",
-    "section": "Project Structure",
-    "text": "Project Structure\nEach project/piece of analysis should have:\n\nGitHub Repository for code and SOP\nSharePoint folder for other project files i.e. no code\n\nTo make it clear where to find each of these:\n\nAdd a shortcut link to the GitHub Repo in the SharePoint folder (1). (If accessing SharePoint in the file explorer then use shortcut instead (2))\n\n\n\nWithin the GitHub repo README file, add the SharePoint folder path from “Analysis/” onwards. No links please (for security)!\n\n\nWhere to store reference data/lookups/config files needed to use the repository\n\nSharePoint\n\nA copy of the config file required for the code in the repo to run.\n\nA config file contains file paths to data and any other “secrets” e.g. details of the UDAL warehouse server name that are needed for the code to run but cannot be shared for data protection/information governance reasons.\n\n\nSE Analytics Lake Mart in UDAL\n\nReference data/lookups not available in the data lake/warehouse\nAny cuts of data specific to that project\n\n\n\n\nOutput of the repository\nOutputs should be stored on SharePoint once QA’d.",
-    "crumbs": [
-      "Principles",
-      "Team Principles"
-    ]
-  },
-  {
-    "objectID": "pages/ways-of-working.html",
-    "href": "pages/ways-of-working.html",
-    "title": "Ways of Working",
-    "section": "",
-    "text": "Following these naming conventions for work by the South East D&A team will make it easy to identify repositories that are ours, and where they sit.",
-    "crumbs": [
-      "Principles",
-      "Ways of Working"
-    ]
-  },
-  {
-    "objectID": "pages/ways-of-working.html#acceptable-locations",
-    "href": "pages/ways-of-working.html#acceptable-locations",
-    "title": "Ways of Working",
-    "section": "Acceptable Locations",
-    "text": "Acceptable Locations\n\nYour personal OneDrive\nYour user area within C: drive in UDAL e.g. C:.username\nYour Databricks personal workspace",
-    "crumbs": [
-      "Principles",
-      "Ways of Working"
-    ]
-  },
-  {
-    "objectID": "pages/ways-of-working.html#unacceptable-locations",
-    "href": "pages/ways-of-working.html#unacceptable-locations",
-    "title": "Ways of Working",
-    "section": "Unacceptable Locations",
-    "text": "Unacceptable Locations\n\nSharePoint\nShared workspace in Databricks",
-    "crumbs": [
-      "Principles",
-      "Ways of Working"
-    ]
-  },
-  {
-    "objectID": "pages/ways-of-working.html#where-to-store-reference-datalookupsconfig-files-needed-to-use-the-repository",
-    "href": "pages/ways-of-working.html#where-to-store-reference-datalookupsconfig-files-needed-to-use-the-repository",
-    "title": "Ways of Working",
-    "section": "Where to store reference data/lookups/config files needed to use the repository",
-    "text": "Where to store reference data/lookups/config files needed to use the repository\n\nSharePoint\n\nA copy of the config file required for the code in the repo to run.\n\nA config file contains file paths to data and any other “secrets” e.g. details of the UDAL warehouse server name that are needed for the code to run but cannot be shared for data protection/information governance reasons.\n\n\nSE Analytics Lake Mart in UDAL\n\nReference data/lookups not available in the data lake/warehouse\nAny cuts of data specific to that project",
-    "crumbs": [
-      "Principles",
-      "Ways of Working"
-    ]
-  },
-  {
-    "objectID": "pages/ways-of-working.html#output-of-the-repository",
-    "href": "pages/ways-of-working.html#output-of-the-repository",
-    "title": "Ways of Working",
-    "section": "Output of the repository",
-    "text": "Output of the repository\nOutputs should be stored on SharePoint once QA’d.",
-    "crumbs": [
-      "Principles",
-      "Ways of Working"
+      "GitHub Guides",
+      "Managing Project History"
     ]
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pull Requests and QA – SE D&amp;A GitHub Guides</title>
+<title>Managing Project History – SE D&amp;A GitHub Guides</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="../pages/qasar.html">Pull Requests and QA</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="../pages/managing-project-history.html">Managing Project History</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/qasar.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pages/qasar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Pull Requests and QA</span></a>
   </div>
 </li>
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/managing-project-history.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/managing-project-history.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Managing Project History</span></a>
   </div>
 </li>
@@ -241,29 +241,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#remember-the-principles-of-branching" id="toc-remember-the-principles-of-branching" class="nav-link" data-scroll-target="#remember-the-principles-of-branching">Remember the principles of branching</a></li>
-  <li><a href="#planned-qa-process" id="toc-planned-qa-process" class="nav-link" data-scroll-target="#planned-qa-process">1. Planned QA Process</a>
+  <li><a href="#what-is-managing-project-history" id="toc-what-is-managing-project-history" class="nav-link active" data-scroll-target="#what-is-managing-project-history">What is Managing Project History?</a></li>
+  <li><a href="#git-revert-vs-git-reset" id="toc-git-revert-vs-git-reset" class="nav-link" data-scroll-target="#git-revert-vs-git-reset">Git Revert vs Git Reset</a>
   <ul class="collapse">
-  <li><a href="#check" id="toc-check" class="nav-link" data-scroll-target="#check">Check</a></li>
-  <li><a href="#creating-a-pull-request-how-the-author-requests-qa" id="toc-creating-a-pull-request-how-the-author-requests-qa" class="nav-link" data-scroll-target="#creating-a-pull-request-how-the-author-requests-qa">Creating a Pull Request (how the author requests QA)</a></li>
-  <li><a href="#complete-qa---the-reviewer" id="toc-complete-qa---the-reviewer" class="nav-link" data-scroll-target="#complete-qa---the-reviewer">Complete QA - the reviewer</a></li>
-  <li><a href="#merge-and-tidy---the-author" id="toc-merge-and-tidy---the-author" class="nav-link" data-scroll-target="#merge-and-tidy---the-author">Merge and tidy - the author</a></li>
+  <li><a href="#git-revert" id="toc-git-revert" class="nav-link" data-scroll-target="#git-revert">Git Revert</a></li>
+  <li><a href="#git-reset" id="toc-git-reset" class="nav-link" data-scroll-target="#git-reset">Git Reset</a></li>
+  <li><a href="#which-one-to-use" id="toc-which-one-to-use" class="nav-link" data-scroll-target="#which-one-to-use">Which one to use</a></li>
   </ul></li>
-  <li><a href="#what-to-do-if-you-spot-an-issue-or-have-an-idea" id="toc-what-to-do-if-you-spot-an-issue-or-have-an-idea" class="nav-link" data-scroll-target="#what-to-do-if-you-spot-an-issue-or-have-an-idea">2. What to do if you spot an issue or have an idea</a>
+  <li><a href="#git-revert-practical-example" id="toc-git-revert-practical-example" class="nav-link" data-scroll-target="#git-revert-practical-example">Git Revert Practical Example</a></li>
+  <li><a href="#git-revert-on-github-desktop" id="toc-git-revert-on-github-desktop" class="nav-link" data-scroll-target="#git-revert-on-github-desktop">Git Revert on GitHub Desktop</a>
   <ul class="collapse">
-  <li><a href="#the-process" id="toc-the-process" class="nav-link" data-scroll-target="#the-process">The process</a></li>
+  <li><a href="#when-can-i-revert" id="toc-when-can-i-revert" class="nav-link" data-scroll-target="#when-can-i-revert">When can I revert?</a></li>
+  <li><a href="#how-to-revert" id="toc-how-to-revert" class="nav-link" data-scroll-target="#how-to-revert">How to revert</a></li>
+  <li><a href="#what-happens-next" id="toc-what-happens-next" class="nav-link" data-scroll-target="#what-happens-next">What happens next</a></li>
   </ul></li>
-  <li><a href="#summary-of-the-process" id="toc-summary-of-the-process" class="nav-link" data-scroll-target="#summary-of-the-process">Summary of the process</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="../pages/qasar.html">Pull Requests and QA</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/first-repo.html">GitHub Guides</a></li><li class="breadcrumb-item"><a href="../pages/managing-project-history.html">Managing Project History</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Pull Requests and QA</h1>
+<h1 class="title">Managing Project History</h1>
 </div>
 
 
@@ -280,172 +280,94 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>Just need a quick reminder? This flowchart shows a summary of the process. Scroll down to see more detail about the steps.</p>
-<p><img src="pics/qasar-flowchart.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This process can be managed in GitHub desktop, VS Code, RStudio, or the IDE you are most comfortable with.</p>
-</div>
-</div>
+<section id="what-is-managing-project-history" class="level1">
+<h1>What is Managing Project History?</h1>
+<p>Git records every change made on a repository as a list of commits. This page will focus on when you have made a commit (could be 30 seconds ago, or 3 weeks ago), and decide that you don’t want those changes.</p>
+<p>As long as it’s not sensitive, keeping all project history is a good idea as it preserves the progress of the repository and means if you change your mind in the future, all the history is still there.</p>
 </section>
-<section id="remember-the-principles-of-branching" class="level2">
-<h2 class="anchored" data-anchor-id="remember-the-principles-of-branching">Remember the principles of branching</h2>
-<p>First let’s remind ourselves of the principles of branching (see <a href="../pages/intro-to-github.html#sec-branching">here</a> for an intro to branching):</p>
+<section id="git-revert-vs-git-reset" class="level1">
+<h1>Git Revert vs Git Reset</h1>
+<p>There are two main options for undoing previous commits: Git Revert and Git Reset</p>
+<section id="git-revert" class="level2">
+<h2 class="anchored" data-anchor-id="git-revert">Git Revert</h2>
+<p>Creates a new commit that reverses changes previously made and applies to the branch. You can see the changes that were made and then removed in the history.</p>
+<p>Git revert is considered the <strong>soft option</strong> as it reverts the changes but leaves them in the history.</p>
+<p>A good option if you’re trying to roll back on a change that hasn’t worked to a previous, stable version of the code.</p>
+<p>You should use Git Revert if:</p>
 <ul>
-<li><p>All code in the main branch should be fully QA’d and functional - <strong>even if this means that the repo is almost empty initially</strong>.</p></li>
-<li><p>New developments and changes should be coded in their own branch: one branch per ‘feature’. Give the branch a name that helps you identify what a change relates to.</p></li>
-<li><p>If working on larger changes, it may be best to break it down into smaller steps and develop and QA iteratively - you can branch off your branch to help with this.</p></li>
-<li><p>GitHub will provide an audit trail of changes made, when they were made, and who made them. This aligns nicely with the team’s QASAR process. It is also easy to roll back to an earlier version if needed.</p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Remember that we don’t have enterprise licences so we can’t protect our main branches. Changes can be merged without review so be careful.</p>
-</div>
-</div>
-</section>
-<section id="planned-qa-process" class="level2">
-<h2 class="anchored" data-anchor-id="planned-qa-process">1. Planned QA Process</h2>
-<section id="check" class="level3">
-<h3 class="anchored" data-anchor-id="check">Check</h3>
-<p>There are a couple of checks to do before QA kicks off properly.</p>
-<p>If you are the <strong>author</strong>:</p>
-<ul>
-<li><p>Check that your code is intentionally commented.</p></li>
-<li><p>The changes you have made are complete, self-reviewed, and saved.</p></li>
-<li><p>You may want to include the author and latest modification date at the top (although GitHub will help manage this for you).</p></li>
-<li><p>Ensure that you have committed and pushed the latest changes so that the person QA-ing has the most recent version.</p></li>
-<li><p>Make sure that the reviewer is a collaborator in the repo settings.</p></li>
-<li><p>Ensure any files (e.g.&nbsp;config) required for the code are uploaded onto SharePoint for the reviewer to use.</p></li>
-</ul>
-<p>If you are the <strong>reviewer</strong>:</p>
-<ul>
-<li>Make sure that you have the time, access, and knowledge to do the review.</li>
+<li><p>If you want to undo an immediate change (e.g., the introduction of a bug or mistake) or revisit an older version of the project.</p></li>
+<li><p>You’re happy to retain all information in the history of the project.</p></li>
 </ul>
 </section>
-<section id="creating-a-pull-request-how-the-author-requests-qa" class="level3">
-<h3 class="anchored" data-anchor-id="creating-a-pull-request-how-the-author-requests-qa">Creating a Pull Request (how the author requests QA)</h3>
-<p>Given that all your changes are in a new feature branch, the QA process boils down to pull requests.</p>
+<section id="git-reset" class="level2">
+<h2 class="anchored" data-anchor-id="git-reset">Git Reset</h2>
+<p>Rolls back the branch to an earlier point and removes any commits made after that.</p>
+<p>Git reset is considered the <strong>hard option</strong> as it scrubs the history, as if it never happened.</p>
+<p>This is the riskier option and therefore is much harder to do. We recommend reserving it only for when things have gone really (really) wrong.</p>
+<p>You should use Git Reset if:</p>
 <ul>
-<li><p>On your repository, navigate to the branches list</p></li>
-<li><p>Click on the 3 dots for the branch you want to be QA’d and click <em>New pull request</em></p></li>
+<li><p>You accidentally committed sensitive information which should be in the GitIgnore (e.g., sensitive data, personal login information, passwords, secrets etc).</p></li>
+<li><p>You need all the information to be scrubbed from the repository completely.</p></li>
 </ul>
-<p><img src="pics/qasar-branches.png" class="img-fluid"></p>
+</section>
+<section id="which-one-to-use" class="level2">
+<h2 class="anchored" data-anchor-id="which-one-to-use">Which one to use</h2>
+<p>Because Git Reset is the more complex and higher‑risk option, <strong>this guidance will focus solely on Git Revert</strong>.</p>
+<p>Ensuring you adhere to the Git Ignore guidance and training, you should never need to use Git Reset, but mistakes can happen. See the <a href="intro-to-github.html">GitHub Basics Concepts</a> tab for more info</p>
+</section>
+</section>
+<section id="git-revert-practical-example" class="level1">
+<h1>Git Revert Practical Example</h1>
+<p>Situation: The team has a regular report showing performance for the 6 ICBs. We want to update the report for 4 ICBs, so we:<br>
+1) Commit the changes<br>
+2) QA<br>
+3) Merge the changes into main</p>
+<p><img src="pics/mph-example-1.png" class="img-fluid"> Situation: A few weeks later, the decision to move to 4 ICBs is cancelled, so we’re back to 6. This is a great use case for a git revert.</p>
+<p><img src="pics/mph-example-2.png" class="img-fluid"></p>
+</section>
+<section id="git-revert-on-github-desktop" class="level1">
+<h1>Git Revert on GitHub Desktop</h1>
+<p>One can use other integrated development environments but be careful as key words are not always used the same way. E.g. In VSCode documentation, it talks about how to “revert or undo a git commit” but actually describes git reset.</p>
+<p><strong>GitHub Desktop</strong> is the most simple to understand and use.</p>
+<section id="when-can-i-revert" class="level2">
+<h2 class="anchored" data-anchor-id="when-can-i-revert">When can I revert?</h2>
 <ul>
-<li><p>Add a description of what needs to be QA’d, why changes have been made, location of any required files (links to public data, or files on SharePoint <strong>path from Analysis/ onwards only!</strong>) in order to run the code, and any specific QA requests</p></li>
-<li><p>Add a reviewer (the person you want to QA) and</p></li>
-<li><p>Add an assignee (usually you, the person responsible for merging the branch once QA has passed)</p></li>
-<li><p>Click <em>create pull request</em></p></li>
+<li>The commit can be pushed or not pushed<br>
+</li>
+<li>Works on individual commits or multiple commits</li>
 </ul>
-<p>Here’s an example of a filled in pull request.</p>
-<p><img src="pics/qasar-pr-completed.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is the notation to create a checklist:<br>
-- [] Item 1<br>
-- [] Item 2</p>
-</div>
-</div>
 </section>
-<section id="complete-qa---the-reviewer" class="level3">
-<h3 class="anchored" data-anchor-id="complete-qa---the-reviewer">Complete QA - the reviewer</h3>
-<p>Once you’ve been added as a reviewer, you will receive an email with a link, and a GitHub notification where you can view changes.</p>
-<p><img src="pics/qasar-pr-notification.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Additions will be in green and removals in red</p>
-</div>
-</div>
-<p>Review the QA checklist and files changed list. Add comments and request changes where necessary. The best way to do this is often to <strong>clone the repository</strong> to your local area, and run the code yourself.</p>
-<p><img src="pics/qasar-pr-request.png" class="img-fluid"></p>
-<p>Once on the Pull Request page, navigate to the Files changed tab to see the code.</p>
-<p>Comments can be added in-line with code. If you do this, click <em>Start a Review</em> if you want all the comments to be sent over at once, at the end of your review.</p>
-<p><img src="pics/qasar-pr-comment.png" class="img-fluid"></p>
-<p>After reviewing the code, as reviewer, you decide what the verdict is. Click “Review Changes” and leave an overall comment, with one of the following options:<br>
-- <strong>Comment</strong> - Submit general feedback without explicit approval<br>
-- <strong>Approve</strong> - Submit feedback and approve merging these changes<br>
-- <strong>Request changes</strong> - Submit feedback that must be addressed before merging</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset panel-tabset-fade">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Comment</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Approve</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Request changes</a></li></ul>
-<div class="tab-content panel-tabset-fade">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>If as the reviewer, you think there could be some improvements, or you’re not sure about xyz, this is a good way to convey that.</p>
-<p><img src="pics/qasar-pr-submit-review-comment.png" class="img-fluid"></p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>If as the reviewer, you’re happy with the piece of work, and want the author to merge this into main branch with no edits, this is what you want.</p>
-<p><img src="pics/qasar-pr-submit-review-approve.png" class="img-fluid"> <img src="pics/qasar-pr-approved.png" class="img-fluid"></p>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>If as the reviewer, you’ve spotted something which needs to be changed before being merged into main, you can request changes to deny the pull request until those are actioned.</p>
-<p><img src="pics/qasar-pr-submit-review-req-changes.png" class="img-fluid"></p>
-</div>
-</div>
-</div>
+<section id="how-to-revert" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-revert">How to revert</h2>
+<ul>
+<li>Open GitHub Desktop<br>
+</li>
+<li>Create a new branch from main<br>
+</li>
+<li>In the history tab, right‑click the commit you want to undo</li>
+</ul>
+<p><img src="pics/mph-how-to-revert-1.png" class="img-fluid"></p>
+<ul>
+<li>Select Revert changes in commit</li>
+</ul>
+<p><img src="pics/mph-how-to-revert-2.png" class="img-fluid"></p>
 </section>
-<section id="merge-and-tidy---the-author" class="level3">
-<h3 class="anchored" data-anchor-id="merge-and-tidy---the-author">Merge and tidy - the author</h3>
-<p>At this stage, the work now sits back with the author.</p>
-<p>If the author decides to make changes on the back of the review, these changes should be made on the same branch. The author should decide if another review is required (correcting a spelling error doesn’t require one, but changing methodology may). If so, the author can use <strong>re-request review</strong> on the same pull request, notifying the reviewer.</p>
-<p>After any changes are made, the branch is ready to merge. Once the pull request is merged the author can delete the old branch (or the repo can be set up to automatically delete the old branch). You will still be able to see all the historic commits but it is best to tidy up branches so that only the active ones exist. If you need to change anything, you can simply create a new branch!</p>
-<p><img src="pics/qasar-pr-merged.png" class="img-fluid"></p>
-<p>The author should then update the README (directly onto the main branch is fine) with QASAR information including level of QA, who conducted QA, and sign off. This information is included in the se-template and makes QASAR information easy to find. Further detail is available in the repo history.</p>
-<p><img src="pics/qasar-readme.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="what-to-do-if-you-spot-an-issue-or-have-an-idea" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-do-if-you-spot-an-issue-or-have-an-idea">2. What to do if you spot an issue or have an idea</h2>
-<p>If you are not within the designated QA process, it is still possible that, in using the code, you see a bug or you have a suggestion for a development. You can do that by creating <em>issues</em>. Any user with read access to a repo can create an issue (assuming that issues are enabled for the repo).</p>
-<p><img src="pics/issues.png" class="img-fluid"></p>
-<section id="the-process" class="level3">
-<h3 class="anchored" data-anchor-id="the-process">The process</h3>
-<ol type="1">
-<li><p><strong>[You, the idea-haver or bug-spotter]</strong> Create an issue detailing the problem or idea (help here: <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue" class="uri">https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue</a>).</p></li>
-<li><p><strong>[You]</strong> If the error or bug is solvable and you feel inclined, you have the option to create a branch that addresses the issue. You can link the pull request with the issue (<a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword" class="uri">https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword</a>).</p></li>
-<li><p><strong>[The author]</strong> The person managing the code can add the issue number to any relevant ticket on the task board.</p></li>
-<li><p><strong>[The author]</strong> The error, bug, or development can be prioritised and actions. Their pull request can also be linked with the issue (<a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword" class="uri">https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword</a>).</p></li>
-<li><p>Issues linked with a pull request will close automatically when they are merged. If not, they can be closed by users with triage permission or greater (<a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/closing-an-issue" class="uri">https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/closing-an-issue</a>).</p></li>
-</ol>
-</section>
-</section>
-<section id="summary-of-the-process" class="level2">
-<h2 class="anchored" data-anchor-id="summary-of-the-process">Summary of the process</h2>
-<p><img src="pics/qa-process.png" class="img-fluid"></p>
+<section id="what-happens-next" class="level2">
+<h2 class="anchored" data-anchor-id="what-happens-next">What happens next</h2>
+<ul>
+<li>GitHub Desktop creates a new commit that reverses the selected changes<br>
+</li>
+<li>The original commits remain visible in history<br>
+</li>
+<li>You can review and push the revert like any other commit</li>
+</ul>
+<p><img src="pics/mph-how-to-revert-3.png" class="img-fluid"></p>
+<ul>
+<li>Once you’re happy with the revert, create a pull request. This is important as reverts can still cause conflicts, and the result may affect files you didn’t expect.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
